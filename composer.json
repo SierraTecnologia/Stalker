@@ -1,6 +1,6 @@
 {
-    "name": "sierratecnologia/finder",
-    "description": "Finder de Arquivos",
+    "name": "sierratecnologia/artista",
+    "description": "Artista de Arquivos",
     "license": "MIT",
     "authors": [
         {
@@ -11,7 +11,7 @@
     "require": {
         "php": "^7.3.0",
         "laravel/framework": "^6.0|^7.0|^8.0",
-        "symfony/finder": "^5.0|^4.0",
+        "sierratecnologia/finder": "dev-master",
         "cloudflare/sdk": "*",
         "deployer/deployer": ">=6.4",
         "devio/pipedrive": "*",
@@ -72,7 +72,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Finder\\": "src/"
+            "Artista\\": "src/"
         }
     },
     "bin": ["bin/observador"],
@@ -95,7 +95,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Finder\\FinderProvider"
+                "Artista\\ArtistaProvider"
             ]
         }
     }
