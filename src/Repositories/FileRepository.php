@@ -6,11 +6,11 @@ use Auth;
 use Config;
 use CryptoService;
 use Artista\Models\Digital\Midia\File;
-use Artista\Repositories\CmsRepository;
+use Support\Repositories\BaseRepository;
 use Artista\Services\Midia\FileService;
 
 
-class FileRepository extends CmsRepository
+class FileRepository extends BaseRepository
 {
     public $model;
 

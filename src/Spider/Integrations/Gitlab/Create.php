@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Spider\Integrations\Gitlab;
+namespace Finder\Spider\Integrations\Gitlab;
 
 use Log;
 use App\Models\User;

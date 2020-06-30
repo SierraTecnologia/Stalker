@@ -1,10 +1,10 @@
 <?php
 
-namespace Artista\Spider\Integrations\Dropbox;
+namespace Finder\Spider\Integrations\Dropbox;
 
 use Log;
 use App\Models\User;
-use Artista\Spider\Integrations\Integration;
+use Finder\Spider\Integrations\Integration;
 
 class Dropbox extends Integration
 {

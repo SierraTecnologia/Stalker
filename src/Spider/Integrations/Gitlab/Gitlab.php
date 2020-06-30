@@ -1,11 +1,11 @@
 <?php
 
-namespace Artista\Spider\Integrations\Gitlab;
+namespace Finder\Spider\Integrations\Gitlab;
 
 use Illuminate\Database\Eloquent\Model;
 use Log;
 use App\Models\User;
-use Artista\Spider\Integrations\Integration;
+use Finder\Spider\Integrations\Integration;
 
 class Gitlab extends Integration
 {

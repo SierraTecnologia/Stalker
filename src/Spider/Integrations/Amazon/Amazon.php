@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Spider\Integrations\Amazon;
+namespace Finder\Spider\Integrations\Amazon;
 
 use Illuminate\Database\Eloquent\Model;
 use Log;

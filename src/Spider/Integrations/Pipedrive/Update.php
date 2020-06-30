@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Spider\Integrations\Pipedrive;
+namespace Finder\Spider\Integrations\Pipedrive;
 
 use Log;
 use App\Models\User;

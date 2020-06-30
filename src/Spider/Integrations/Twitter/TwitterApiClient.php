@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Spider\Integrations\Twitter;
+namespace Finder\Spider\Integrations\Twitter;
 
 define('TWITTER_API_TIMEOUT', 5);  
 define('TWITTER_API_USERAGENT', 'PHP/'.PHP_VERSION.'; http://github.com/timwhitlock/php-twitter-api');  

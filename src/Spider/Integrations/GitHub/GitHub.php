@@ -1,10 +1,10 @@
 <?php
 
-namespace Artista\Spider\Integrations\GitHub;
+namespace Finder\Spider\Integrations\GitHub;
 
 use Illuminate\Database\Eloquent\Model;
 use Log;
-use Artista\Spider\Integrations\Integration;
+use Finder\Spider\Integrations\Integration;
 
 class GitHub extends Integration
 {

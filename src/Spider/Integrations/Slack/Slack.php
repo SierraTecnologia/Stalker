@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Spider\Integrations\Slack;
+namespace Finder\Spider\Integrations\Slack;
 
 use Log;
 // use Finder\Models\Digital\Midia\Video;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Spider\Integrations\Xvideos;
+namespace Finder\Spider\Integrations\Xvideos;
 
 use Log;
 // use Finder\Models\Digital\Midia\Video;

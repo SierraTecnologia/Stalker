@@ -1,11 +1,11 @@
 <?php
 
-namespace Artista\Spider\Integrations\ZohoMail;
+namespace Finder\Spider\Integrations\ZohoMail;
 
 use Log;
 // use Artista\Models\Digital\Midia\Video;
 use App\Models\User;
-use Artista\Spider\Integrations\Integration;
+use Finder\Spider\Integrations\Integration;
 
 class ZohoMail extends Integration
 {

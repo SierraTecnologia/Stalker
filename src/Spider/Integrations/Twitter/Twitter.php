@@ -4,13 +4,13 @@
  * https://github.com/laravel-notification-channels/twitter
  */
 
-namespace Artista\Spider\Integrations\Twitter;
+namespace Finder\Spider\Integrations\Twitter;
 
 use Log;
 use App\Models\User;
 use Abraham\TwitterOAuth\TwitterOAuth;
 
-use Artista\Spider\Integrations\Integration;
+use Finder\Spider\Integrations\Integration;
 
 class Twitter extends Integration
 {

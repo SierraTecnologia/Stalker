@@ -6,7 +6,7 @@
  * g4...
  */
 
-namespace Artista\Spider\Integrations\Novare;
+namespace Finder\Spider\Integrations\Novare;
 
 use Illuminate\Database\Eloquent\Model;
 use Log;

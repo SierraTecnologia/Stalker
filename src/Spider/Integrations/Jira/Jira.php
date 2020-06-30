@@ -3,12 +3,12 @@
  * https://github.com/lesstif/php-jira-rest-client
  */
 
-namespace Artista\Spider\Integrations\Jira;
+namespace Finder\Spider\Integrations\Jira;
 
 use Illuminate\Database\Eloquent\Model;
 use Log;
 use App\Models\User;
-use Artista\Spider\Integrations\Integration;
+use Finder\Spider\Integrations\Integration;
 use JiraRestApi\Configuration\ArrayConfiguration;
 
 class Jira extends Integration

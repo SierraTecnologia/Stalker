@@ -5,12 +5,12 @@
  * Equipe de Qa
  */
 
-namespace Artista\Spider\Integrations\Testlink;
+namespace Finder\Spider\Integrations\Testlink;
 
 use Illuminate\Database\Eloquent\Model;
 use Log;
 use App\Models\User;
-use Artista\Spider\Integrations\Integration;
+use Finder\Spider\Integrations\Integration;
 
 class Testlink extends Integration
 {

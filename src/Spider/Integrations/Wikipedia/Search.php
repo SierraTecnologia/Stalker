@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Spider\Integrations\Wikipedia;
+namespace Finder\Spider\Integrations\Wikipedia;
 
 use Log;
 use App\Models\User;

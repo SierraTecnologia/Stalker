@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Spider\Integrations\Jira;
+namespace Finder\Spider\Integrations\Jira;
 
 use Log;
 use App\Models\User;

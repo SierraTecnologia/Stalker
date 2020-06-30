@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Spider\Integrations\Instagram;
+namespace Finder\Spider\Integrations\Instagram;
 
 use Log;
 use App\Models\User;

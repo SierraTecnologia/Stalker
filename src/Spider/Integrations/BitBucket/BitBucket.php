@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Spider\Integrations\BitBucket;
+namespace Finder\Spider\Integrations\BitBucket;
 
 use Illuminate\Database\Eloquent\Model;
 use Log;

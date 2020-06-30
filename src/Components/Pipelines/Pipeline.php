@@ -4,8 +4,8 @@ namespace Artista\Components\Pipelines;
 
 use Log;
 use App\Models\User;
-use Artista\Spider\Integrations\Instagram\Instagram;
-use Artista\Spider\Integrations\Instagram\Facebook;
+use Finder\Spider\Integrations\Instagram\Instagram;
+use Finder\Spider\Integrations\Instagram\Facebook;
 
 
 use Artista\Actions\PublishPost;

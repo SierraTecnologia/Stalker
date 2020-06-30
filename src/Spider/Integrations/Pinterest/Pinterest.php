@@ -1,11 +1,11 @@
 <?php
 
-namespace Artista\Spider\Integrations\Pinterest;
+namespace Finder\Spider\Integrations\Pinterest;
 
 use Log;
 // use Artista\Models\Digital\Midia\Video;
 use App\Models\User;
-use Artista\Spider\Integrations\Integration;
+use Finder\Spider\Integrations\Integration;
 
 class Pinterest extends Integration
 {

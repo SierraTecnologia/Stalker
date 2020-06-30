@@ -1,10 +1,10 @@
 <?php
 
-namespace Artista\Spider\Integrations\Trello;
+namespace Finder\Spider\Integrations\Trello;
 
 use Illuminate\Database\Eloquent\Model;
 use Log;
-use Artista\Spider\Integrations\Integration;
+use Finder\Spider\Integrations\Integration;
 
 class Trello extends Integration
 {

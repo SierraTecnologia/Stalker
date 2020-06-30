@@ -1,8 +1,8 @@
 <?php
 
-namespace Artista\Spider\Integrations\Instagram\Metrics;
+namespace Finder\Spider\Integrations\Instagram\Metrics;
 
-use Artista\Spider\Integrations\Instagram\Instagram;
+use Finder\Spider\Integrations\Instagram\Instagram;
 
 class Metric extends Instagram
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Artista\Spider\Integrations\SnapChat;
+namespace Finder\Spider\Integrations\SnapChat;
 
 use Log;
 // use Artista\Models\Digital\Midia\Video;
 use App\Models\User;
-use Artista\Spider\Integrations\Integration;
+use Finder\Spider\Integrations\Integration;
 
 class SnapChat extends Integration
 {

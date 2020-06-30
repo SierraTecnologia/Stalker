@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Spider\Integrations\Twitter;
+namespace Finder\Spider\Integrations\Twitter;
 
 /*
  * Abraham Williams (abraham@abrah.am) http://abrah.am

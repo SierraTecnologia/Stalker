@@ -1,11 +1,11 @@
 <?php
 
-namespace Artista\Spider\Integrations\Google;
+namespace Finder\Spider\Integrations\Google;
 
 use Log;
 // use Artista\Models\Digital\Midia\Video;
 use App\Models\User;
-use Artista\Spider\Integrations\Integration;
+use Finder\Spider\Integrations\Integration;
 
 class Google extends Integration
 {

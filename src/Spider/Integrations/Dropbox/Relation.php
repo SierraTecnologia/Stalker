@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Spider\Integrations\Dropbox;
+namespace Finder\Spider\Integrations\Dropbox;
 
 use Log;
 use App\Models\User;

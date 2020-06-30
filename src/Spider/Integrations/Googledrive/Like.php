@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Spider\Integrations\Googledrive;
+namespace Finder\Spider\Integrations\Googledrive;
 
 use Log;
 use App\Models\User;

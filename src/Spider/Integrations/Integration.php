@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Spider\Integrations;
+namespace Finder\Spider\Integrations;
 
 use Illuminate\Database\Eloquent\Model;
 use Log;
@@ -8,15 +8,15 @@ use App\Models\User;
 
 use Population\Models\Components\Integrations\Token;
 
-use Artista\Spider\Integrations\Github\Github;
-use Artista\Spider\Integrations\Amazon\Amazon;
-use Artista\Spider\Integrations\Gitlab\Gitlab;
-use Artista\Spider\Integrations\Jira\Jira;
-use Artista\Spider\Integrations\Novare\Novare;
-use Artista\Spider\Integrations\Pipedrive\Pipedrive;
-use Artista\Spider\Integrations\Sentry\Sentry;
-use Artista\Spider\Integrations\Testlink\Testlink;
-use Artista\Spider\Integrations\Zoho\Zoho;
+use Finder\Spider\Integrations\Github\Github;
+use Finder\Spider\Integrations\Amazon\Amazon;
+use Finder\Spider\Integrations\Gitlab\Gitlab;
+use Finder\Spider\Integrations\Jira\Jira;
+use Finder\Spider\Integrations\Novare\Novare;
+use Finder\Spider\Integrations\Pipedrive\Pipedrive;
+use Finder\Spider\Integrations\Sentry\Sentry;
+use Finder\Spider\Integrations\Testlink\Testlink;
+use Finder\Spider\Integrations\Zoho\Zoho;
 use Support\Components\Coders\Parser\ParseClass;
 use Support\Utils\Debugger\ErrorHelper;
 use Population\Models\Components\Integrations\Integration as IntegrationModel;

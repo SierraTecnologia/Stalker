@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Spider\Integrations\Youtube;
+namespace Finder\Spider\Integrations\Youtube;
 
 use Log;
 // use Finder\Models\Digital\Midia\Video;

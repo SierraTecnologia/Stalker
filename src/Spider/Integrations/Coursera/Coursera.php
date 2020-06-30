@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Spider\Integrations\Coursera;
+namespace Finder\Spider\Integrations\Coursera;
 
 use Illuminate\Database\Eloquent\Model;
 use Log;

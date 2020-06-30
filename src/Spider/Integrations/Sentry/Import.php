@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Spider\Integrations\Sentry;
+namespace Finder\Spider\Integrations\Sentry;
 
 use Log;
 

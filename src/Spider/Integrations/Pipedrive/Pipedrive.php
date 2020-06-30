@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Spider\Integrations\Pipedrive;
+namespace Finder\Spider\Integrations\Pipedrive;
 
 use Illuminate\Database\Eloquent\Model;
 use Log;

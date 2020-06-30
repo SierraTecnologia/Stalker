@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Spider\Integrations\PhotoAcompanhante;
+namespace Finder\Spider\Integrations\PhotoAcompanhante;
 
 use Log;
 use App\Models\User;

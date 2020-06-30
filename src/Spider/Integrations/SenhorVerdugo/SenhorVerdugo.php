@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Spider\Integrations\SenhorVerdugo;
+namespace Finder\Spider\Integrations\SenhorVerdugo;
 
 use App\Models\Model;
 use Log;

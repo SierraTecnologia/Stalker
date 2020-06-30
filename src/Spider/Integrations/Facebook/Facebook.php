@@ -1,10 +1,10 @@
 <?php
 
-namespace Artista\Spider\Integrations\Facebook;
+namespace Finder\Spider\Integrations\Facebook;
 
 use Log;
 use App\Models\User;
-use Artista\Spider\Integrations\Integration;
+use Finder\Spider\Integrations\Integration;
 
 class Facebook extends Integration
 {

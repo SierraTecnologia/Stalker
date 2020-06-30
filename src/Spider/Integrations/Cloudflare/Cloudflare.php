@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Spider\Integrations\Cloudflare;
+namespace Finder\Spider\Integrations\Cloudflare;
 
 use Illuminate\Database\Eloquent\Model;
 use Log;

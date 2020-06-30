@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Spider\Integrations\SenhorVerdugo;
+namespace Finder\Spider\Integrations\SenhorVerdugo;
 
 
 class Update extends SenhorVerdugo

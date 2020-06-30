@@ -1,10 +1,10 @@
 <?php
 
-namespace Artista\Spider\Integrations\Googledrive;
+namespace Finder\Spider\Integrations\Googledrive;
 
 use Log;
 use App\Models\User;
-use Artista\Spider\Integrations\Integration;
+use Finder\Spider\Integrations\Integration;
 
 class Googledrive extends Integration
 {

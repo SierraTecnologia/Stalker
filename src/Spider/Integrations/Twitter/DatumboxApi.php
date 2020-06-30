@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Spider\Integrations\Twitter;
+namespace Finder\Spider\Integrations\Twitter;
 
 use Log;
 use App\Models\User;

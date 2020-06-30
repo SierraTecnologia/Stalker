@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Spider\Integrations\Tumblr;
+namespace Finder\Spider\Integrations\Tumblr;
 
 use Log;
 use App\Models\User;

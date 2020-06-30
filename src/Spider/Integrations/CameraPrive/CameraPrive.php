@@ -1,10 +1,10 @@
 <?php
 
-namespace Artista\Spider\Integrations\CameraPrive;
+namespace Finder\Spider\Integrations\CameraPrive;
 
 use Illuminate\Database\Eloquent\Model;
 use Log;
-use Artista\Spider\Integrations\Integration;
+use Finder\Spider\Integrations\Integration;
 
 class CameraPrive extends Integration
 {

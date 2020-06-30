@@ -1,11 +1,11 @@
 <?php
 
-namespace Artista\Spider\Integrations\Tumblr;
+namespace Finder\Spider\Integrations\Tumblr;
 
 use Log;
 use App\Models\User;
 
-use Artista\Spider\Integrations\Integration;
+use Finder\Spider\Integrations\Integration;
 
 class Tumblr extends Integration
 {
