@@ -2,7 +2,7 @@
 
 namespace Artista\Components\Feactures\Work\Init;
 
-class Apoio
+class Init
 {
 
     public function rules()

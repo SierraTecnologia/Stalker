@@ -9,7 +9,7 @@
  */
 
 
-namespace Artista\Components\Worker\Analyser\Logging\Plugins;
+namespace Artista\Components\Worker\Logging\Plugins;
 
 class Php
 {

@@ -4,7 +4,7 @@ namespace Artista\Models\Digital\Infra;
 
 use Support\Models\Base;
 
-class DominioRule extends Base
+class DomainRule extends Base
 {
 
     protected $organizationPerspective = true;

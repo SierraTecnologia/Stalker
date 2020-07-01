@@ -1,8 +1,8 @@
 <?php
 
-namespace Artista\Components\Services\Image;
+namespace Artista\Services\Image;
 
-use Artista\Components\Services\Image\Contracts\ImageProcessor;
+use Artista\Services\Image\Contracts\ImageProcessor;
 use Illuminate\Contracts\Filesystem\Factory as Storage;
 use Illuminate\Contracts\Validation\Factory as ValidatorFactory;
 use Illuminate\Validation\Rule;
@@ -17,7 +17,7 @@ use InvalidArgumentException;
 /**
  * Class ImagineImageProcessor.
  *
- * @package Finder\Components\Services\Image
+ * @package Finder\Services\Image
  */
 class ImagineImageProcessor implements ImageProcessor
 {

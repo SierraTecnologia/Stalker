@@ -8,7 +8,7 @@
  * Licensed under the GPLv3 license.
  */
 
-namespace Artista\Components\Worker\Analyser\Logging\Plugins;
+namespace Artista\Components\Worker\Logging\Plugins;
 
 class Apache
 {

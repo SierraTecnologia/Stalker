@@ -1,11 +1,11 @@
 <?php
 
-namespace Artista\Components\Services\Image\Contracts;
+namespace Artista\Services\Image\Contracts;
 
 /**
  * Interface ImageProcessor.
  *
- * @package Finder\Components\Services\Image\Contracts
+ * @package Finder\Services\Image\Contracts
  */
 interface ImageProcessor
 {

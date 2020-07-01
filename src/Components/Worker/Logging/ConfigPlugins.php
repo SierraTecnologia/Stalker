@@ -9,7 +9,7 @@
  */
 
 
-namespace Artista\Components\Worker\Analyser\Logging;
+namespace Artista\Components\Worker\Logging;
 
 use Artista\Components\Worker\Logging\Plugins\Apache;
 use Artista\Components\Worker\Logging\Plugins\Iis;

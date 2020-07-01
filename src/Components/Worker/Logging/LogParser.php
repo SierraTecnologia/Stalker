@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Components\Worker\Analyser\Logging;
+namespace Artista\Components\Worker\Logging;
 
 class LogParser
 {

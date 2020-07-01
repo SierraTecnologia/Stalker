@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Actions;
+namespace Artista\Actions\Agir;
 
 use Laravel\Nova\Nova;
 use Illuminate\Contracts\Queue\ShouldQueue;

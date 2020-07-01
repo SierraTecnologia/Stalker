@@ -3,7 +3,7 @@
  * Estatisticas Rodadas Diariamente
  */
 
-namespace Artista\Routines\Database;
+namespace Artista\Routines\Explorer;
 
 use Artista\Actions\Action;
 use Artista\Actions\ActionCollection;
