@@ -4,7 +4,7 @@ namespace Artista\Http\Requests;
 
 use Auth;
 use Gate;
-use Population\Models\Negocios\Page;
+use Siravel\Models\Negocios\Page;
 use Illuminate\Foundation\Http\FormRequest;
 
 class PagesRequest extends FormRequest
