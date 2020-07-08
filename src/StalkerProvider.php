@@ -16,18 +16,18 @@ use Illuminate\Routing\Router;
 
 use Support\Traits\Providers\ConsoleTools;
 
-use Stalker\Facades\Stalker as ArtistaFacade;
+use Stalker\Facades\Stalker as StalkerFacade;
 use Illuminate\Contracts\Events\Dispatcher;
 use JeroenNoten\LaravelAdminLte\Events\BuildingMenu;
 
 use Stalker\Services\Midia\FileService;
 
-class ArtistaProvider extends ServiceProvider
+class StalkerProvider extends ServiceProvider
 {
     use ConsoleTools;
 
     public static $aliasProviders = [
-        'Artista' => \Stalker\Facades\Stalker::class,
+        'Stalker' => \Stalker\Facades\Stalker::class,
         'FileService' => FileService::class,
     ];
 
@@ -51,10 +51,10 @@ class ArtistaProvider extends ServiceProvider
      */
     public static $menuItens = [
         'Painel' => [
-            'Artista' => [
+            'Stalker' => [
                 [
-                    'text'        => 'Artista Midias',
-                    'route'       => 'artista.medias',
+                    'text'        => 'Stalker Midias',
+                    'route'       => 'stalker.medias',
                     'icon'        => 'fas fa-fw fa-gavel',
                     'icon_color'  => 'blue',
                     'label_color' => 'success',
@@ -93,7 +93,7 @@ class ArtistaProvider extends ServiceProvider
         }
 
         /**
-         * Artista Routes
+         * Stalker Routes
          */
         Route::group(
             [
@@ -112,7 +112,7 @@ class ArtistaProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom($this->getPublishesPath('config/medialibrary.php'), 'medialibrary');
-        $this->mergeConfigFrom($this->getPublishesPath('config/sitec/artista.php'), 'sitec.artista');
+        $this->mergeConfigFrom($this->getPublishesPath('config/sitec/stalker.php'), 'sitec.stalker');
         $this->mergeConfigFrom($this->getPublishesPath('config/mime.php'), 'mime');
         
 
@@ -125,8 +125,8 @@ class ArtistaProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
         $this->app->singleton(
-            'artista', function () {
-                return new Artista();
+            'stalker', function () {
+                return new Stalker();
             }
         );
 
@@ -142,12 +142,12 @@ class ArtistaProvider extends ServiceProvider
         |--------------------------------------------------------------------------
         */
         /**
-         * Singleton Artista
+         * Singleton Stalker
          */
         $this->app->singleton(
-            ArtistaService::class, function ($app) {
-                Log::channel('sitec-artista')->info('Singleton Artista');
-                return new ArtistaService(\Illuminate\Support\Facades\Config::get('sitec.artista'));
+            StalkerService::class, function ($app) {
+                Log::channel('sitec-stalker')->info('Singleton Stalker');
+                return new StalkerService(\Illuminate\Support\Facades\Config::get('sitec.stalker'));
             }
         );
 
@@ -162,10 +162,10 @@ class ArtistaProvider extends ServiceProvider
         //  * Helpers
         //  */
         // Aqui noa funciona
-        // if (!function_exists('artista_asset')) {
-        //     function artista_asset($path, $secure = null)
+        // if (!function_exists('stalker_asset')) {
+        //     function stalker_asset($path, $secure = null)
         //     {
-        //         return route('artista.assets').'?path='.urlencode($path);
+        //         return route('stalker.assets').'?path='.urlencode($path);
         //     }
         // }
     }
@@ -178,7 +178,7 @@ class ArtistaProvider extends ServiceProvider
     public function provides()
     {
         return [
-            'artista',
+            'stalker',
         ];
     }
 
@@ -199,9 +199,9 @@ class ArtistaProvider extends ServiceProvider
             ], ['config',  'sitec', 'sitec-config']
         );
 
-        // // Publish artista css and js to public directory
+        // // Publish stalker css and js to public directory
         // $this->publishes([
-        //     $this->getDistPath('artista') => public_path('assets/artista')
+        //     $this->getDistPath('stalker') => public_path('assets/stalker')
         // ], ['public',  'sitec', 'sitec-public']);
 
         $this->loadViews();
@@ -213,10 +213,10 @@ class ArtistaProvider extends ServiceProvider
     {
         // View namespace
         $viewsPath = $this->getResourcesPath('views');
-        $this->loadViewsFrom($viewsPath, 'artista');
+        $this->loadViewsFrom($viewsPath, 'stalker');
         $this->publishes(
             [
-            $viewsPath => base_path('resources/views/vendor/artista'),
+            $viewsPath => base_path('resources/views/vendor/stalker'),
             ], ['views',  'sitec', 'sitec-views']
         );
 
@@ -227,12 +227,12 @@ class ArtistaProvider extends ServiceProvider
         // Publish lanaguage files
         $this->publishes(
             [
-            $this->getResourcesPath('lang') => resource_path('lang/vendor/artista')
+            $this->getResourcesPath('lang') => resource_path('lang/vendor/stalker')
             ], ['lang',  'sitec', 'sitec-lang', 'translations']
         );
 
         // Load translations
-        $this->loadTranslationsFrom($this->getResourcesPath('lang'), 'artista');
+        $this->loadTranslationsFrom($this->getResourcesPath('lang'), 'stalker');
     }
 
 
@@ -242,9 +242,9 @@ class ArtistaProvider extends ServiceProvider
     private function loadLogger()
     {
         Config::set(
-            'logging.channels.sitec-artista', [
+            'logging.channels.sitec-stalker', [
             'driver' => 'single',
-            'path' => storage_path('logs/sitec-artista.log'),
+            'path' => storage_path('logs/sitec-stalker.log'),
             'level' => env('APP_LOG_LEVEL', 'debug'),
             ]
         );
