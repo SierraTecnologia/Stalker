@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Collection;
 use Support\Models\Base;
 use Facilitador\Models\Post;
 use Locaravel\Models\Localization;
-use RicardoSierra\Translation\Models\Language;
+use Translation\Models\Language;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 /**
