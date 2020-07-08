@@ -4,7 +4,7 @@
  * Throws exception if face was not detected in `faceDetect` call.
  */
 
-namespace Artista\Exception;
+namespace Stalker\Exception;
 
 use Exception;
 

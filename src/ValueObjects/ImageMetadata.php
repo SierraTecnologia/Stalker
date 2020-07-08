@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\ValueObjects;
+namespace Stalker\ValueObjects;
 
 use Carbon\Carbon;
 use Illuminate\Contracts\Support\Arrayable;

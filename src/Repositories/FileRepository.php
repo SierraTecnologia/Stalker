@@ -1,13 +1,13 @@
 <?php
 
-namespace Artista\Repositories;
+namespace Stalker\Repositories;
 
 use Auth;
 use Config;
 use CryptoService;
-use Artista\Models\File;
+use Stalker\Models\File;
 use Support\Repositories\BaseRepository;
-use Artista\Services\Midia\FileService;
+use Stalker\Services\Midia\FileService;
 
 
 class FileRepository extends BaseRepository

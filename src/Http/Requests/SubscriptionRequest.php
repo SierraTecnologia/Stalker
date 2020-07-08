@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Http\Requests;
+namespace Stalker\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Auth;

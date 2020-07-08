@@ -1,9 +1,9 @@
 <?php
 
-namespace Artista\Entities;
+namespace Stalker\Entities;
 
 use Carbon\Carbon;
-use Artista\ValueObjects\ImageMetadata;
+use Stalker\ValueObjects\ImageMetadata;
 use Illuminate\Support\Collection;
 
 /**

@@ -1,10 +1,10 @@
 <?php
 
-namespace Artista\Http\Requests;
+namespace Stalker\Http\Requests;
 
 use Auth;
 use Gate;
-use Artista\Models\Imagen as Image;
+use Stalker\Models\Imagen as Image;
 use Illuminate\Foundation\Http\FormRequest;
 
 class ImagesRequest extends FormRequest

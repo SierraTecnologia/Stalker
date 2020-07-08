@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Http\Resources\Entitys;
+namespace Stalker\Http\Resources\Entitys;
 
 use function SiUtils\Helper\html_purify;
 use function SiUtils\Helper\to_object;

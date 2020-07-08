@@ -1,8 +1,8 @@
 <?php
 
-namespace Artista\Builders;
+namespace Stalker\Builders;
 
-use Artista\Models\Photo;
+use Stalker\Models\Photo;
 use App\Contants\Tables;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Builder;
 /**
  * Class PhotoBuilder.
  *
- * @package Artista\Builders
+ * @package Stalker\Builders
  */
 class PhotoBuilder extends Builder
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Artista\Http\Resources\Entitys;
+namespace Stalker\Http\Resources\Entitys;
 
-use Artista\Entities\PhotoEntity;
+use Stalker\Entities\PhotoEntity;
 use Illuminate\Http\Resources\Json\Resource;
 use function SiUtils\Helper\html_purify;
 use function SiUtils\Helper\to_int;

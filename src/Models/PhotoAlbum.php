@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Models;
+namespace Stalker\Models;
 
 use Support\Models\Base;
 use Illuminate\Support\Facades\URL;

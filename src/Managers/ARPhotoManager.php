@@ -1,12 +1,12 @@
 <?php
 
-namespace Artista\Managers\Photo;
+namespace Stalker\Managers\Photo;
 
-use Artista\Models\Photo;
+use Stalker\Models\Photo;
 use Finder\Services\Image\Contracts\ImageProcessor;
 use Locaravel\Managers\LocationManager;
-use Artista\Managers\PhotoManager;
-use Artista\Entities\PhotoEntity;
+use Stalker\Managers\PhotoManager;
+use Stalker\Entities\PhotoEntity;
 use Illuminate\Contracts\Filesystem\Factory as Storage;
 use Illuminate\Database\ConnectionInterface as Database;
 use function SiUtils\Helper\str_unique;
@@ -14,7 +14,7 @@ use function SiUtils\Helper\str_unique;
 /**
  * Class ARPhotoManager.
  *
- * @package Artista\Managers\Photo
+ * @package Stalker\Managers\Photo
  */
 class ARPhotoManager implements PhotoManager
 {

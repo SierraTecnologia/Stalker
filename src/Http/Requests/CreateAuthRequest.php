@@ -1,8 +1,8 @@
 <?php
 
-namespace Artista\Http\Requests;
+namespace Stalker\Http\Requests;
 
-use Artista\Http\Rules\ReCaptchaRule;
+use Stalker\Http\Rules\ReCaptchaRule;
 use Illuminate\Foundation\Http\FormRequest;
 
 /**

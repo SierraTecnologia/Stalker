@@ -1,11 +1,11 @@
 <?php
 
-namespace Artista\Models;
+namespace Stalker\Models;
 
-use Artista\Builders\PhotoBuilder;
+use Stalker\Builders\PhotoBuilder;
 use Siravel\Contants\Tables;
 use Carbon\Carbon;
-use Artista\Entities\PhotoEntity;
+use Stalker\Entities\PhotoEntity;
 use Illuminate\Database\Eloquent\Collection;
 use Support\Models\Base;
 use Facilitador\Models\Post;

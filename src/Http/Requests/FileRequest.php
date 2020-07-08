@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Http\Requests;
+namespace Stalker\Http\Requests;
 
 use Auth;
 use Gate;

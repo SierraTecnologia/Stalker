@@ -1,10 +1,10 @@
 <?php
 
-namespace Artista;
+namespace Stalker;
 
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
-use Artista\Services\ArtistaService;
+use Stalker\Services\ArtistaService;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\View;
 
@@ -16,18 +16,18 @@ use Illuminate\Routing\Router;
 
 use Support\Traits\Providers\ConsoleTools;
 
-use Artista\Facades\Artista as ArtistaFacade;
+use Stalker\Facades\Artista as ArtistaFacade;
 use Illuminate\Contracts\Events\Dispatcher;
 use JeroenNoten\LaravelAdminLte\Events\BuildingMenu;
 
-use Artista\Services\Midia\FileService;
+use Stalker\Services\Midia\FileService;
 
 class ArtistaProvider extends ServiceProvider
 {
     use ConsoleTools;
 
     public static $aliasProviders = [
-        'Artista' => \Artista\Facades\Artista::class,
+        'Artista' => \Stalker\Facades\Artista::class,
         'FileService' => FileService::class,
     ];
 
@@ -97,7 +97,7 @@ class ArtistaProvider extends ServiceProvider
          */
         Route::group(
             [
-                'namespace' => '\Artista\Http\Controllers',
+                'namespace' => '\Stalker\Http\Controllers',
                 'prefix' => \Illuminate\Support\Facades\Config::get('application.routes.main'),
                 'as' => 'rica.',
             ], function ($router) {
@@ -154,7 +154,7 @@ class ArtistaProvider extends ServiceProvider
         // Register commands
         $this->registerCommandFolders(
             [
-            base_path('vendor/sierratecnologia/artista/src/Console/Commands') => '\Artista\Console\Commands',
+            base_path('vendor/sierratecnologia/stalker/src/Console/Commands') => '\Stalker\Console\Commands',
             ]
         );
 

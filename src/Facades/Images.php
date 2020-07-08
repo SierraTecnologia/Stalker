@@ -1,6 +1,6 @@
 <?php 
 
-namespace Artista\Facades;
+namespace Stalker\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

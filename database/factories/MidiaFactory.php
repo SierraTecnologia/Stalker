@@ -7,7 +7,7 @@
 |--------------------------------------------------------------------------
 */
 
-$factory->define(\Artista\Models\File::class, function (Faker\Generator $faker) {
+$factory->define(\Stalker\Models\File::class, function (Faker\Generator $faker) {
     return [
         'location' => 'files/dumb',
         'name' => 'dumbFile',
@@ -29,7 +29,7 @@ $factory->define(\Artista\Models\File::class, function (Faker\Generator $faker) 
 |--------------------------------------------------------------------------
 */
 
-$factory->define(\Artista\Models\Image::class, function (Faker\Generator $faker) {
+$factory->define(\Stalker\Models\Image::class, function (Faker\Generator $faker) {
     return [
         'location' => 'files/dumb',
         'name' => 'dumb',
@@ -53,7 +53,7 @@ $factory->define(\Artista\Models\Image::class, function (Faker\Generator $faker)
 |
 */
 
-$factory->define(\Artista\Models\Photo::class, function (Faker\Generator $faker) {
+$factory->define(\Stalker\Models\Photo::class, function (Faker\Generator $faker) {
     return [
         'created_by_user_id' => (new \App\Models\User)->newQuery()->inRandomOrder()->firstOrFail()->id,
         'path' => sprintf('/%s/%s.%s', str_random(12), str_random(5), str_random(3)),
@@ -62,7 +62,7 @@ $factory->define(\Artista\Models\Photo::class, function (Faker\Generator $faker)
     ];
 });
 
-$factory->define(\Artista\Models\Thumbnail::class, function (Faker\Generator $faker) {
+$factory->define(\Stalker\Models\Thumbnail::class, function (Faker\Generator $faker) {
     return [
         'path' => sprintf('/%s/%s.%s', str_random(12), str_random(5), str_random(3)),
         'width' => $faker->randomNumber(4),

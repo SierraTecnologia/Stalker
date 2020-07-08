@@ -3,7 +3,7 @@
 namespace Finder\Http\Controllers\Features\Midia;
 
 use Population\Models\Blog\Article;
-use Artista\Models\PhotoAlbum;
+use Stalker\Models\PhotoAlbum;
 use DB;
 
 class HomeController extends Controller

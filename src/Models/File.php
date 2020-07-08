@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Models;
+namespace Stalker\Models;
 
 use Informate\Traits\ArchiveTrait;
 

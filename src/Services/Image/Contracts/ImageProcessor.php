@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Services\Image\Contracts;
+namespace Stalker\Services\Image\Contracts;
 
 /**
  * Interface ImageProcessor.

@@ -1,9 +1,9 @@
 <?php
 
-namespace Artista\Models;
+namespace Stalker\Models;
 
-use Artista\Builders\ThumbnailBuilder;
-use Artista\Entities\ThumbnailEntity;
+use Stalker\Builders\ThumbnailBuilder;
+use Stalker\Entities\ThumbnailEntity;
 use Support\Models\Base;
 
 /**

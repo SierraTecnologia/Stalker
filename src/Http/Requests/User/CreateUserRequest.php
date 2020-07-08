@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Http\Requests\User;
+namespace Stalker\Http\Requests\User;
 
 class CreateUserRequest extends Request
 {

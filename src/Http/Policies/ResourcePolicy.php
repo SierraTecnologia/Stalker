@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Http\Policies;
+namespace Stalker\Http\Policies;
 
 use Population\Models\User;
 

@@ -2,8 +2,8 @@
 
 namespace Finder\Http\Controllers\Features\Midia;
 
-use Artista\Models\Photo;
-use Artista\Models\PhotoAlbum;
+use Stalker\Models\Photo;
+use Stalker\Models\PhotoAlbum;
 use Finder\Services\Midia\MidiaService;
 use Finder\Http\Controllers\Controller;
 

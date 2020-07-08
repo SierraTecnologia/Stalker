@@ -1,11 +1,11 @@
 <?php
 
-namespace Artista\Http\Controllers;
+namespace Stalker\Http\Controllers;
 
-use Artista\Services\FinderService;
+use Stalker\Services\FinderService;
 use Illuminate\Support\Facades\Schema;
 use Population\Repositories\PersonRepository;
-use Artista\Models\Media;
+use Stalker\Models\Media;
 
 class HomeController extends Controller
 {

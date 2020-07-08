@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Http\Controllers;
+namespace Stalker\Http\Controllers;
 
 use InfyOm\Generator\Utils\ResponseUtil;
 use Response;

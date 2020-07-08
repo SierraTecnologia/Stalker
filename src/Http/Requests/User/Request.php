@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Http\Requests\User;
+namespace Stalker\Http\Requests\User;
 
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;

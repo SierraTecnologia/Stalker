@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Entities;
+namespace Stalker\Entities;
 
 /**
  * Class ThumbnailEntity.

@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Http\Requests\User;
+namespace Stalker\Http\Requests\User;
 
 class CreateRoleRequest extends Request
 {

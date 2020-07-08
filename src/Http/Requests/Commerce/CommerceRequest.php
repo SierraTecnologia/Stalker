@@ -1,9 +1,9 @@
 <?php
 
-namespace Artista\Http\Requests\Commerce;
+namespace Stalker\Http\Requests\Commerce;
 
 use Illuminate\Support\Facades\Gate;
-use Artista\Http\Requests\Request;
+use Stalker\Http\Requests\Request;
 use Population\Models\Feature;
 
 abstract class CommerceRequest extends Request

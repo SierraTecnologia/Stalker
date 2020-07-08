@@ -1,13 +1,13 @@
 <?php
 
-namespace Artista\Builders;
+namespace Stalker\Builders;
 
 use Illuminate\Database\Eloquent\Builder;
 
 /**
  * Class ThumbnailBuilder.
  *
- * @package Artista\Builders
+ * @package Stalker\Builders
  */
 class ThumbnailBuilder extends Builder
 {

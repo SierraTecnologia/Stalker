@@ -1,13 +1,13 @@
 <?php
 
-namespace Artista\Repositories;
+namespace Stalker\Repositories;
 
 use Cms;
 use Config;
 use CryptoService;
-use Artista\Models\Imagen as Image;
+use Stalker\Models\Imagen as Image;
 use Population\Models\Tag;
-use Artista\Services\Midia\FileService;
+use Stalker\Services\Midia\FileService;
 use Support\Repositories\BaseRepository;
 
 

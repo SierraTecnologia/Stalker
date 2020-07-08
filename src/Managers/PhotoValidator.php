@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Managers\Photo;
+namespace Stalker\Managers\Photo;
 
 use App\Contants\Tables;
 use Locaravel\Rules\LatitudeRule;
@@ -15,7 +15,7 @@ use function SiUtils\Helper\validator_filter_attributes;
 /**
  * Class PhotoValidator.
  *
- * @package Artista\Managers\Photo
+ * @package Stalker\Managers\Photo
  */
 class PhotoValidator
 {

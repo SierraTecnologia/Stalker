@@ -28,7 +28,7 @@ $loadLaravel = new \Support\Helps\LoadLaravel(
 $loadLaravel->runMigrations();
 
 $cliMate = new \League\CLImate\CLImate;
-$analyser = new \Artista\Console\External\Explorer\DirectoryExplorer($cliMate, $binariesPath, $_SERVER['argv']);
+$analyser = new \Stalker\Console\External\Explorer\DirectoryExplorer($cliMate, $binariesPath, $_SERVER['argv']);
 if ($analyser->run()) {
     // No issues found
     exit(0);

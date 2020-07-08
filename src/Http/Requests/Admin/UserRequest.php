@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Http\Requests\Admin;
+namespace Stalker\Http\Requests\Admin;
 
 use Population\Models\User;
 use Illuminate\Foundation\Http\FormRequest;

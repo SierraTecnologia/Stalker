@@ -1,8 +1,8 @@
 <?php
 
-namespace Artista\Managers;
+namespace Stalker\Managers;
 
-use Artista\Entities\PhotoEntity;
+use Stalker\Entities\PhotoEntity;
 
 /**
  * Interface PhotoManager.

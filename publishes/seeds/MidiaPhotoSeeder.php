@@ -2,8 +2,8 @@
 
 use Illuminate\Database\Seeder;
 
-use Artista\Models\Photo;
-use Artista\Models\Thumbnail;
+use Stalker\Models\Photo;
+use Stalker\Models\Thumbnail;
 
 /**
  * Class ProtoSeeder

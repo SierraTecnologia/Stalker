@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Http\Requests\User;
+namespace Stalker\Http\Requests\User;
 
 use Laravel\Socialite\Contracts\User as SocialUser;
 use Validator;

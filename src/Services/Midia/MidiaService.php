@@ -1,8 +1,8 @@
 <?php
 
-namespace Artista\Services\Midia;
+namespace Stalker\Services\Midia;
 
-use Artista;
+use Stalker;
 use Exception;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Facades\Cache;
@@ -14,8 +14,8 @@ use Intervention\Image\Facades\Image;
 use Cms;
 use Log;
 use SplFileInfo;
-use Artista\Facades\CryptoServiceFacade;
-use Artista\Models\Imagen as ModelImage;
+use Stalker\Facades\CryptoServiceFacade;
+use Stalker\Models\Imagen as ModelImage;
 
 class MidiaService
 {

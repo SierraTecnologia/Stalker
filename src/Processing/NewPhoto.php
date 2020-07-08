@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Processing;
+namespace Stalker\Processing;
 
 use Log;
 use App\Models\User;

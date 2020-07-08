@@ -1,8 +1,8 @@
 <?php
 
-namespace Artista\Services\Image;
+namespace Stalker\Services\Image;
 
-use Artista\Services\Image\Contracts\ImageProcessor;
+use Stalker\Services\Image\Contracts\ImageProcessor;
 use Illuminate\Contracts\Filesystem\Factory as Storage;
 use Illuminate\Contracts\Validation\Factory as ValidatorFactory;
 use Illuminate\Validation\Rule;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Http\Requests\Commerce;
+namespace Stalker\Http\Requests\Commerce;
 
 use Population\Models\Commerce\Product;
 

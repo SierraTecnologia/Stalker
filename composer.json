@@ -1,6 +1,6 @@
 {
-    "name": "sierratecnologia/artista",
-    "description": "Artista de Arquivos",
+    "name": "sierratecnologia/stalker",
+    "description": "Stalker de Arquivos",
     "license": "MIT",
     "authors": [
         {
@@ -35,7 +35,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Artista\\": "src/"
+            "Stalker\\": "src/"
         }
     },
     "bin": ["bin/stalker"],
@@ -58,7 +58,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Artista\\ArtistaProvider"
+                "Stalker\\ArtistaProvider"
             ]
         }
     }

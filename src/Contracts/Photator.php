@@ -1,6 +1,6 @@
 <?php
 
-namespace Artista\Contracts;
+namespace Stalker\Contracts;
 
 interface Photator
 {
