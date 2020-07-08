@@ -1,10 +1,10 @@
 <?php
 
-namespace Finder\Http\Controllers\Features\Midia;
+namespace Stalker\Http\Controllers\Midia;
 
 use Config;
-use Finder\Http\Controllers\Controller;
-use Finder\Repositories\ImageRepository;
+use Stalker\Http\Controllers\Controller;
+use Stalker\Repositories\ImageRepository;
 
 class GalleryController extends Controller
 {

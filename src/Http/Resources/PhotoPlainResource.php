@@ -11,7 +11,7 @@ use function SiUtils\Helper\to_string;
 /**
  * Class PhotoPlainResource.
  *
- * @package Finder\Http\Resources\Entitys
+ * @package Stalker\Http\Resources\Entitys
  */
 class PhotoPlainResource extends Resource
 {

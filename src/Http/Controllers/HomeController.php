@@ -2,7 +2,7 @@
 
 namespace Stalker\Http\Controllers;
 
-use Stalker\Services\FinderService;
+use Stalker\Services\StalkerService;
 use Illuminate\Support\Facades\Schema;
 use Population\Repositories\PersonRepository;
 use Stalker\Models\Media;
@@ -11,7 +11,7 @@ class HomeController extends Controller
 {
     protected $service;
 
-    public function __construct(FinderService $service)
+    public function __construct(StalkerService $service)
     {
         parent::__construct();
 
@@ -23,7 +23,7 @@ class HomeController extends Controller
 
         // dd($results);
         return view(
-            'finder::finder.home'
+            'stalker::stalker.home'
             // compact('results')
         );
     }
@@ -35,7 +35,7 @@ class HomeController extends Controller
 
         // dd($results);
         return view(
-            'finder::components.gallery',
+            'stalker::components.gallery',
             compact('results')
         );
     }
@@ -44,6 +44,6 @@ class HomeController extends Controller
         // $orders = $personRepo->getByCustomer(auth()->id())->orderBy('created_at', 'DESC')->paginate(\Illuminate\Support\Facades\Config::get('cms.pagination'));
         $persons = $personRepo->all(); //->paginate(\Illuminate\Support\Facades\Config::get('cms.pagination'));
 
-        return view('finder::finder.persons')->with('persons', $persons);
+        return view('stalker::stalker.persons')->with('persons', $persons);
     }
 }

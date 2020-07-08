@@ -1,6 +1,6 @@
 <?php
 
-namespace Finder\Http\Controllers\Features\Midia;
+namespace Stalker\Http\Controllers\Midia;
 
 use Population\Models\Blog\Article;
 use Stalker\Models\PhotoAlbum;

@@ -3,7 +3,7 @@
  * Procura trampos
  */
 
-namespace Finder\Components\Processing;
+namespace Stalker\Processing;
 
 use Log;
 use App\Models\User;

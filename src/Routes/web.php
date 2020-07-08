@@ -3,10 +3,10 @@
 Route::group(
     ['middleware' => ['web']], function () {
 
-        Route::prefix('finder')->group(
+        Route::prefix('stalker')->group(
             function () {
                 Route::group(
-                    ['as' => 'finder.'], function () {
+                    ['as' => 'stalker.'], function () {
 
                         /**
                          * 

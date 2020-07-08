@@ -2,7 +2,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFinderComputersStoragesTables extends Migration
+class CreateStalkerComputersStoragesTables extends Migration
 {
 
     /**
@@ -34,10 +34,10 @@ class CreateFinderComputersStoragesTables extends Migration
                 $table->string('name')->nullable();
                 $table->string('location')->nullable();
 
-                $table->string('path')->nullable(); //"/home/sierra/Desenvolvimento/Libs/Finder/."
+                $table->string('path')->nullable(); //"/home/sierra/Desenvolvimento/Libs/Stalker/."
                 $table->string('filename')->nullable(); //"composer.json"
                 $table->string('basename')->nullable(); //"composer.json"
-                $table->string('pathname')->nullable(); //"/home/sierra/Desenvolvimento/Libs/Finder/./composer.json"
+                $table->string('pathname')->nullable(); //"/home/sierra/Desenvolvimento/Libs/Stalker/./composer.json"
                 $table->string('extension')->nullable(); //"json"
                 $table->string('realPath')->nullable(); //"./composer.json"
                 $table->string('aTime')->nullable(); //2019-12-03 08:23:37

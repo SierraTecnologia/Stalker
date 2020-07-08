@@ -8,7 +8,7 @@ namespace Stalker\Services;
 /**
  * 
  */
-class ArtistaService
+class StalkerService
 {
 
     protected $config;

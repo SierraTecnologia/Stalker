@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 /**
  * Class SubscriptionRequest.
  *
- * @package Finder\Http\Requests
+ * @package Stalker\Http\Requests
  */
 class SubscriptionRequest extends FormRequest
 {

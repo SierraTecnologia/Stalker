@@ -1,11 +1,11 @@
 <?php 
 
-namespace Finder\Http\Controllers\Features\Midia;
+namespace Stalker\Http\Controllers\Midia;
 
 use Stalker\Models\Photo;
 use Stalker\Models\PhotoAlbum;
-use Finder\Services\Midia\MidiaService;
-use Finder\Http\Controllers\Controller;
+use Stalker\Services\Midia\MidiaService;
+use Stalker\Http\Controllers\Controller;
 
 class MidiaController extends Controller
 {

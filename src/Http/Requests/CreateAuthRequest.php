@@ -8,7 +8,7 @@ use Illuminate\Foundation\Http\FormRequest;
 /**
  * Class CreateAuthRequest.
  *
- * @package Finder\Http\Requests
+ * @package Stalker\Http\Requests
  */
 class CreateAuthRequest extends FormRequest
 {

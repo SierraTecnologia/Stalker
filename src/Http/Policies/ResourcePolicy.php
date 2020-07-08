@@ -7,7 +7,7 @@ use Population\Models\User;
 /**
  * Class ResourcePolicy.
  *
- * @package Finder\Http\Policies
+ * @package Stalker\Http\Policies
  */
 class ResourcePolicy
 {

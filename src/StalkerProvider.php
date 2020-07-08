@@ -43,7 +43,7 @@ class StalkerProvider extends ServiceProvider
         \Intervention\Image\ImageServiceProvider::class,
         \Spatie\MediaLibrary\MediaLibraryServiceProvider::class,
 
-        
+        \CipeMotion\Medialibrary\ServiceProvider::class,
     ];
 
     /**

@@ -7,7 +7,7 @@ use Illuminate\Foundation\Http\FormRequest;
 /**
  * Class PaginatedRequest.
  *
- * @package Finder\Http\Requests
+ * @package Stalker\Http\Requests
  */
 class PaginatedRequest extends FormRequest
 {

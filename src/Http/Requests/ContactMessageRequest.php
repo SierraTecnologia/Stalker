@@ -8,7 +8,7 @@ use Illuminate\Foundation\Http\FormRequest;
 /**
  * Class ContactMessageRequest.
  *
- * @package Finder\Http\Requests
+ * @package Stalker\Http\Requests
  */
 class ContactMessageRequest extends FormRequest
 {

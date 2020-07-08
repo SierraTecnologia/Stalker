@@ -17,7 +17,7 @@ use InvalidArgumentException;
 /**
  * Class ImagineImageProcessor.
  *
- * @package Finder\Services\Image
+ * @package Stalker\Services\Image
  */
 class ImagineImageProcessor implements ImageProcessor
 {

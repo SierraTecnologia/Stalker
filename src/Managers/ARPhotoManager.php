@@ -3,7 +3,7 @@
 namespace Stalker\Managers\Photo;
 
 use Stalker\Models\Photo;
-use Finder\Services\Image\Contracts\ImageProcessor;
+use Stalker\Services\Image\Contracts\ImageProcessor;
 use Locaravel\Managers\LocationManager;
 use Stalker\Managers\PhotoManager;
 use Stalker\Entities\PhotoEntity;

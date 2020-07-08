@@ -2,7 +2,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFinderFilesGroupsMidiaTables extends Migration
+class CreateStalkerFilesGroupsMidiaTables extends Migration
 {
 
     /**

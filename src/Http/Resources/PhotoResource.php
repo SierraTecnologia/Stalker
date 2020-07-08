@@ -9,7 +9,7 @@ use function SiUtils\Helper\to_string;
 /**
  * Class PhotoResource.
  *
- * @package Finder\Http\Resources\Entitys
+ * @package Stalker\Http\Resources\Entitys
  */
 class PhotoResource extends PhotoPlainResource
 {

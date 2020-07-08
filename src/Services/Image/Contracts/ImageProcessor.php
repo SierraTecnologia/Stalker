@@ -5,7 +5,7 @@ namespace Stalker\Services\Image\Contracts;
 /**
  * Interface ImageProcessor.
  *
- * @package Finder\Services\Image\Contracts
+ * @package Stalker\Services\Image\Contracts
  */
 interface ImageProcessor
 {

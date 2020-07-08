@@ -1,6 +1,6 @@
 <?php
 
-namespace Population\Traits;
+namespace Stalker\Traits;
 
 use Log;
 use Support\Models\Base;

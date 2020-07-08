@@ -4,7 +4,7 @@ namespace Stalker\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class Artista extends Facade
+class Stalker extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -13,6 +13,6 @@ class Artista extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'artista';
+        return 'stalker';
     }
 }

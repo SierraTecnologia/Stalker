@@ -150,7 +150,7 @@ class Imagen extends ArchiveTrait
                 return true;
             }
         } catch (Exception $e) {
-            Log::channel('sitec-finder')->debug('Could not find the image');
+            Log::channel('sitec-stalker')->debug('Could not find the image');
 
             return false;
         }

@@ -8,7 +8,7 @@ use Illuminate\Foundation\Http\FormRequest;
 /**
  * Class ReCaptchaRequest.
  *
- * @package Finder\Http\Requests
+ * @package Stalker\Http\Requests
  */
 class ReCaptchaRequest extends FormRequest
 {
