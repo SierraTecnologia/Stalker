@@ -4,7 +4,7 @@ namespace Stalker;
 
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
-use Stalker\Services\ArtistaService;
+use Stalker\Services\StalkerService;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\View;
 
@@ -16,7 +16,7 @@ use Illuminate\Routing\Router;
 
 use Support\Traits\Providers\ConsoleTools;
 
-use Stalker\Facades\Artista as ArtistaFacade;
+use Stalker\Facades\Stalker as ArtistaFacade;
 use Illuminate\Contracts\Events\Dispatcher;
 use JeroenNoten\LaravelAdminLte\Events\BuildingMenu;
 
@@ -27,7 +27,7 @@ class ArtistaProvider extends ServiceProvider
     use ConsoleTools;
 
     public static $aliasProviders = [
-        'Artista' => \Stalker\Facades\Artista::class,
+        'Artista' => \Stalker\Facades\Stalker::class,
         'FileService' => FileService::class,
     ];
 

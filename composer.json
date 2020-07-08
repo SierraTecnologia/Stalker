@@ -58,7 +58,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Stalker\\ArtistaProvider"
+                "Stalker\\StalkerProvider"
             ]
         }
     }
