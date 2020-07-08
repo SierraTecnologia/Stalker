@@ -53,7 +53,7 @@ class Thumbnail extends Base
      */
     public function photos()
     {
-        return $this->belongsToMany(Photo::class, 'photos_thumbnails');
+        return $this->belongsToMany(Photo::class, 'thumbnails');
     }
 
     /**

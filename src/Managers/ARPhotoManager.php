@@ -86,7 +86,7 @@ class ARPhotoManager implements PhotoManager
         $this->database->transaction(
             function () use ($photo, $attributes, $thumbnails) {
                 if (isset($attributes['location'])) {
-                    $photo->location_id = $this->locationManager->create($attributes['location'])->getId();
+                    $photo->localization_id = $this->locationManager->create($attributes['location'])->getId();
                 }
                 $photo->save();
                 $photo->thumbnails()->detach();
@@ -118,7 +118,7 @@ class ARPhotoManager implements PhotoManager
 
         $this->database->transaction(
             function () use ($photo, $attributes) {
-                $photo->location_id = $this->locationManager->create($attributes['location'])->getId();
+                $photo->localization_id = $this->locationManager->create($attributes['location'])->getId();
                 $photo->save();
             }
         );

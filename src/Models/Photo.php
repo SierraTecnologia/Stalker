@@ -3,13 +3,13 @@
 namespace Stalker\Models;
 
 use Stalker\Builders\PhotoBuilder;
-use Siravel\Contants\Tables;
+use App\Contants\Tables;
 use Carbon\Carbon;
 use Stalker\Entities\PhotoEntity;
 use Illuminate\Database\Eloquent\Collection;
 use Support\Models\Base;
 use Facilitador\Models\Post;
-use Population\Models\Identity\Location\Location;
+use Locaravel\Models\Localization;
 use RicardoSierra\Translation\Models\Language;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -18,7 +18,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  *
  * @property int id
  * @property int created_by_user_id
- * @property int location_id
+ * @property int localization_id
  * @property string path
  * @property string avg_color
  * @property array metadata
@@ -115,7 +115,7 @@ class Photo extends Base
      */
     public function location()
     {
-        return $this->belongsTo(Location::class, 'location_id');
+        return $this->belongsTo(Localization::class, 'localization_id');
     }
 
     /**
@@ -123,7 +123,7 @@ class Photo extends Base
      */
     public function thumbnails()
     {
-        return $this->belongsToMany(Thumbnail::class, Tables::TABLE_PHOTOS_THUMBNAILS)
+        return $this->belongsToMany(Thumbnail::class, 'thumbnails')
             ->orderBy('width')
             ->orderBy('height');
     }
