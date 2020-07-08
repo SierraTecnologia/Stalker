@@ -4,7 +4,7 @@ namespace Artista\Http\Requests;
 
 use Auth;
 use Gate;
-use Artista\Models\Digital\Midia\Imagen as Image;
+use Artista\Models\Imagen as Image;
 use Illuminate\Foundation\Http\FormRequest;
 
 class ImagesRequest extends FormRequest

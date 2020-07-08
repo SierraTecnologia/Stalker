@@ -5,7 +5,7 @@ namespace Artista\Http\Controllers;
 use Artista\Services\FinderService;
 use Illuminate\Support\Facades\Schema;
 use Population\Repositories\PersonRepository;
-use Artista\Models\Digital\Midia\Media;
+use Artista\Models\Media;
 
 class HomeController extends Controller
 {

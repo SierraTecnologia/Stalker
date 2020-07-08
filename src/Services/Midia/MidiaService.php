@@ -15,7 +15,7 @@ use Cms;
 use Log;
 use SplFileInfo;
 use Artista\Facades\CryptoServiceFacade;
-use Artista\Models\Digital\Midia\Imagen as ModelImage;
+use Artista\Models\Imagen as ModelImage;
 
 class MidiaService
 {

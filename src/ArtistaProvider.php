@@ -53,79 +53,12 @@ class ArtistaProvider extends ServiceProvider
         'Painel' => [
             'Artista' => [
                 [
-                    'text'        => 'Procurar',
-                    'icon'        => 'fas fa-fw fa-search',
+                    'text'        => 'Artista Midias',
+                    'route'       => 'artista.medias',
+                    'icon'        => 'fas fa-fw fa-gavel',
                     'icon_color'  => 'blue',
                     'label_color' => 'success',
                     // 'access' => \App\Models\Role::$ADMIN
-                ],
-                [
-                    'text'        => 'Track',
-                    'icon'        => 'fas fa-fw fa-search',
-                    'icon_color'  => 'blue',
-                    'label_color' => 'success',
-                    // 'access' => \App\Models\Role::$ADMIN
-                ],
-                [
-                    'text'        => 'Bots',
-                    'icon'        => 'fas fa-fw fa-industry',
-                    'icon_color'  => 'red',
-                    'label_color' => 'success',
-                    // 'nivel' => \App\Models\Role::$GOOD,
-                ],
-                'Procurar' => [
-                    [
-                        'text'        => 'Artista Home',
-                        'route'       => 'artista.home',
-                        'icon'        => 'fas fa-fw fa-ship',
-                        'icon_color'  => 'blue',
-                        'label_color' => 'success',
-                        // 'access' => \App\Models\Role::$ADMIN
-                    ],
-                    [
-                        'text'        => 'Artista Midias',
-                        'route'       => 'artista.medias',
-                        'icon'        => 'fas fa-fw fa-gavel',
-                        'icon_color'  => 'blue',
-                        'label_color' => 'success',
-                        // 'access' => \App\Models\Role::$ADMIN
-                    ],
-                    [
-                        'text'        => 'Artista Pessoas',
-                        'route'       => 'artista.persons',
-                        'icon'        => 'fas fa-fw fa-group',
-                        'icon_color'  => 'blue',
-                        'label_color' => 'success',
-                        // 'access' => \App\Models\Role::$ADMIN
-                    ],
-                ],
-                'Track' => [
-                    [
-                        'text'        => 'Persons',
-                        'route'       => 'artista.track.person',
-                        'icon'        => 'fas fa-fw fa-coffee',
-                        'icon_color'  => 'red',
-                        'label_color' => 'success',
-                        // 'nivel' => \App\Models\Role::$GOOD,
-                    ],
-                ],
-                'Bots' => [
-                    [
-                        'text'        => 'Runners',
-                        'url'         => 'runners',
-                        'icon'        => 'fas fa-fw fa-industry',
-                        'icon_color'  => 'red',
-                        'label_color' => 'success',
-                        // 'nivel' => \App\Models\Role::$GOOD,
-                    ],
-                    [
-                        'text'        => 'Actions',
-                        'route'       => 'artista.action.actions.index',
-                        'icon'        => 'fas fa-fw fa-coffee',
-                        'icon_color'  => 'red',
-                        'label_color' => 'success',
-                        // 'nivel' => \App\Models\Role::$GOOD,
-                    ],
                 ],
             ],
         ],
@@ -164,7 +97,9 @@ class ArtistaProvider extends ServiceProvider
          */
         Route::group(
             [
-            'namespace' => '\Artista\Http\Controllers',
+                'namespace' => '\Artista\Http\Controllers',
+                'prefix' => \Illuminate\Support\Facades\Config::get('application.routes.main'),
+                'as' => 'rica.',
             ], function ($router) {
                 include __DIR__.'/Routes/web.php';
             }
@@ -178,6 +113,7 @@ class ArtistaProvider extends ServiceProvider
     {
         $this->mergeConfigFrom($this->getPublishesPath('config/medialibrary.php'), 'medialibrary');
         $this->mergeConfigFrom($this->getPublishesPath('config/sitec/artista.php'), 'sitec.artista');
+        $this->mergeConfigFrom($this->getPublishesPath('config/mime.php'), 'mime');
         
 
         $this->setProviders();
@@ -259,6 +195,7 @@ class ArtistaProvider extends ServiceProvider
             // Paths
             $this->getPublishesPath('config/sitec') => config_path('sitec'),
             $this->getPublishesPath('config/medialibrary.php') => config_path('medialibrary.php'),
+            $this->getPublishesPath('config/mime.php') => config_path('mime.php'),
             ], ['config',  'sitec', 'sitec-config']
         );
 

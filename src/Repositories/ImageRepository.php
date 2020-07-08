@@ -5,7 +5,7 @@ namespace Artista\Repositories;
 use Cms;
 use Config;
 use CryptoService;
-use Artista\Models\Digital\Midia\Imagen as Image;
+use Artista\Models\Imagen as Image;
 use Population\Models\Tag;
 use Artista\Services\Midia\FileService;
 use Support\Repositories\BaseRepository;

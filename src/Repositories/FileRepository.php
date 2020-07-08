@@ -5,7 +5,7 @@ namespace Artista\Repositories;
 use Auth;
 use Config;
 use CryptoService;
-use Artista\Models\Digital\Midia\File;
+use Artista\Models\File;
 use Support\Repositories\BaseRepository;
 use Artista\Services\Midia\FileService;
 
