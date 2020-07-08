@@ -28,7 +28,7 @@
         "intervention/imagecache": ">=2.3",
         "spatie/laravel-medialibrary": "^7.0",
         "league/climate": ">=3.4",
-        "sierratecnologia/crypto": "dev-master",
+        "sierratecnologia/locaravel": "dev-master",
         "raiym/instagram-php-scraper": ">=0.9.10",
         "sierratecnologia/tracking": "dev-master",
         "league/mime-type-detection": ">=1.1"

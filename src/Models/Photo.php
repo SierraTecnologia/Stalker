@@ -2,10 +2,10 @@
 
 namespace Artista\Models;
 
-use Population\Manipule\Builders\PhotoBuilder;
+use Artista\Builders\PhotoBuilder;
 use Siravel\Contants\Tables;
 use Carbon\Carbon;
-use Population\Manipule\Entities\PhotoEntity;
+use Artista\Entities\PhotoEntity;
 use Illuminate\Database\Eloquent\Collection;
 use Support\Models\Base;
 use Facilitador\Models\Post;

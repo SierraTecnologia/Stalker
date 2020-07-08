@@ -2,7 +2,7 @@
 
 namespace Artista\Http\Resources\Entitys;
 
-use Population\Manipule\Entities\PhotoEntity;
+use Artista\Entities\PhotoEntity;
 use Illuminate\Http\Resources\Json\Resource;
 use function SiUtils\Helper\html_purify;
 use function SiUtils\Helper\to_int;

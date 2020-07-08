@@ -2,8 +2,8 @@
 
 namespace Artista\Models;
 
-use Population\Manipule\Builders\ThumbnailBuilder;
-use Population\Manipule\Entities\ThumbnailEntity;
+use Artista\Builders\ThumbnailBuilder;
+use Artista\Entities\ThumbnailEntity;
 use Support\Models\Base;
 
 /**
