@@ -119,11 +119,6 @@ class StalkerProvider extends ServiceProvider
         $this->setProviders();
         $this->routes();
 
-
-
-        // Register Migrations
-        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-
         $this->app->singleton(
             'stalker', function () {
                 return new Stalker();
@@ -206,6 +201,11 @@ class StalkerProvider extends ServiceProvider
 
         $this->loadViews();
         $this->loadTranslations();
+
+
+        // Register Migrations
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+
 
     }
 
