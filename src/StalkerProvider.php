@@ -54,7 +54,7 @@ class StalkerProvider extends ServiceProvider
             'Stalker' => [
                 [
                     'text'        => 'Stalker Midias',
-                    'route'       => 'stalker.medias',
+                    'route'       => 'rica.stalker.medias',
                     'icon'        => 'fas fa-fw fa-gavel',
                     'icon_color'  => 'blue',
                     'label_color' => 'success',
@@ -101,7 +101,7 @@ class StalkerProvider extends ServiceProvider
                 'prefix' => \Illuminate\Support\Facades\Config::get('application.routes.main'),
                 'as' => 'rica.',
             ], function ($router) {
-                include __DIR__.'/Routes/web.php';
+                include __DIR__.'/../routes/web.php';
             }
         );
     }
