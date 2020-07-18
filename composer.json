@@ -11,7 +11,6 @@
     "require": {
         "php": "^7.3.0",
         "laravel/framework": "^6.0|^7.0|^8.0",
-        "sierratecnologia/finder": "dev-master",
         "cloudflare/sdk": "*",
         "devio/pipedrive": "*",
         "fideloper/proxy": ">=4.0",
