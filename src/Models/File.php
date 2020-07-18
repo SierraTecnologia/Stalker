@@ -2,7 +2,7 @@
 
 namespace Stalker\Models;
 
-use Informate\Traits\ArchiveTrait;
+use Support\Traits\Models\ArchiveTrait;
 
 class File extends ArchiveTrait
 {
