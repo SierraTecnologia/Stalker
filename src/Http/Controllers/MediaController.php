@@ -9,10 +9,10 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Intervention\Image\Facades\Image;
 use League\Flysystem\Plugin\ListWith;
-use Facilitador\Events\MediaFileAdded;
-use Facilitador\Facades\Facilitador;
+use Stalker\Events\MediaFileAdded;
+use Stalker\Facades\Stalker;
 
-class FacilitadorMediaController extends Controller
+class MediaController extends Controller
 {
     /**
      * @var string 

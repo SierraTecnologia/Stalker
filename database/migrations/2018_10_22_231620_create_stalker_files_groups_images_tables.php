@@ -2,7 +2,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateStalkerFilesGroupsMidiaTables extends Migration
+class CreateStalkerFilesGroupsImagesTables extends Migration
 {
 
     /**
@@ -85,30 +85,6 @@ class CreateStalkerFilesGroupsMidiaTables extends Migration
         );
         
 
-        
-        Schema::create(
-            'videos', function (Blueprint $table) {
-                $table->engine = 'InnoDB';
-                $table->increments('id')->unsigned();
-                $table->string('name', 255)->nullable();
-                $table->string('url', 255)->nullable();
-                $table->string('tempo', 255)->nullable();
-                $table->string('language', 255)->nullable();
-                $table->integer('actors')->nullable();
-                $table->timestamps();
-                $table->softDeletes();
-            }
-        );
-        Schema::create(
-            'videoables', function (Blueprint $table) {
-                $table->increments('id');
-                $table->unsignedInteger('video_id')->nullable();
-                // $table->foreign('video_id')->references('id')->on('videos');
-                $table->string('videoable_id');
-                $table->string('videoable_type');
-            }
-        );
-        
 
         Schema::create(
             'thumbnails', function (Blueprint $table) {
@@ -141,7 +117,12 @@ class CreateStalkerFilesGroupsMidiaTables extends Migration
      */
     public function down()
     {
-        Schema::drop('thumbnails');
+        Schema::dropIfExists('thumbnailables');
+        Schema::dropIfExists('thumbnails');
+        Schema::dropIfExists('photos');
+        Schema::dropIfExists('photo_albums');
+        Schema::dropIfExists('imagenables');
+        Schema::dropIfExists('imagens');
     }
 
 }

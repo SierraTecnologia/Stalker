@@ -1,10 +1,10 @@
 <?php
 
-namespace Stalker\Http\Requests\Admin;
+namespace Stalker\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class LanguageRequest extends FormRequest
+class PhotoRequest extends FormRequest
 {
 
     /**
@@ -15,8 +15,8 @@ class LanguageRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|min:3',
-            'code' => 'required|min:1',
+            'language_code' => 'required|integer',
+            'photo_album_id' => 'required|integer',
         ];
     }
 

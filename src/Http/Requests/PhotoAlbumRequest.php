@@ -1,6 +1,6 @@
 <?php
 
-namespace Stalker\Http\Requests\Admin;
+namespace Stalker\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
