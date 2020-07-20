@@ -37,7 +37,7 @@ class Video extends Base
 
     public function sitios()
     {
-        return $this->morphToMany('Population\Models\Identity\Digital\Sitio', 'sitioable');
+        return $this->morphToMany('Telefonica\Models\Digital\Sitio', 'sitioable');
     }
 
     /**
@@ -53,7 +53,7 @@ class Video extends Base
      */
     public function persons()
     {
-        return $this->morphedByMany(\Illuminate\Support\Facades\Config::get('sitec.core.models.person', \Population\Models\Identity\Actors\Person::class), 'videoable');
+        return $this->morphedByMany(\Illuminate\Support\Facades\Config::get('sitec.core.models.person', \Telefonica\Models\Actors\Person::class), 'videoable');
     }
         
     // // /**

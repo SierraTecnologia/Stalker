@@ -39,7 +39,7 @@ class Imagen extends ArchiveTrait
 
     public function sitios()
     {
-        return $this->morphToMany('Population\Models\Identity\Digital\Sitio', 'sitioable');
+        return $this->morphToMany('Telefonica\Models\Digital\Sitio', 'sitioable');
     }
 
     /**
@@ -55,7 +55,7 @@ class Imagen extends ArchiveTrait
      */
     public function persons()
     {
-        return $this->morphedByMany(\Illuminate\Support\Facades\Config::get('sitec.core.models.person', \Population\Models\Identity\Actors\Person::class), 'imagenable');
+        return $this->morphedByMany(\Illuminate\Support\Facades\Config::get('sitec.core.models.person', \Telefonica\Models\Actors\Person::class), 'imagenable');
     }
 
     /**
@@ -165,7 +165,7 @@ class Imagen extends ArchiveTrait
      */
     public static function createByExternalLink($link, $target, $data = [])
     {
-        $personClass = \Illuminate\Support\Facades\Config::get('sitec.core.models.person', \Population\Models\Identity\Actors\Person::class);
+        $personClass = \Illuminate\Support\Facades\Config::get('sitec.core.models.person', \Telefonica\Models\Actors\Person::class);
 
         $person = $personClass::createIfNotExistAndReturn($target);
 
@@ -180,7 +180,7 @@ class Imagen extends ArchiveTrait
     public static function createByMediaFromDisk($disk, $link, $target, $data = [])
     {
         if (is_string($target)) {
-            $personClass = \Illuminate\Support\Facades\Config::get('sitec.core.models.person', \Population\Models\Identity\Actors\Person::class);
+            $personClass = \Illuminate\Support\Facades\Config::get('sitec.core.models.person', \Telefonica\Models\Actors\Person::class);
             $person = $personClass::createIfNotExistAndReturn($target);
         } else {
             $person = $target;
