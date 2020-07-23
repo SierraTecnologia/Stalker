@@ -41,6 +41,16 @@ Route::group(
                             }
                         );
 
+
+                        Route::get('encode/{id}/progress', [
+                            'as' => 'encode@progress',
+                            'uses' => 'Encoder@progress',
+                        ]);
+                        Route::post('encode/notify', [
+                            'as' => 'encode@notify',
+                            'uses' => 'Encoder@notify',
+                        ]);
+                        
                     }
                 );
             }

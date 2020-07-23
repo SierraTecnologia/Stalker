@@ -131,6 +131,15 @@ class StalkerProvider extends ServiceProvider
             }
         );
         
+        // Events
+        $this->app['events']->listen(
+            'eloquent.saving:*',
+            '\Stalker\Observers\Encoding@onSaving'
+        );
+        $this->app['events']->listen(
+            'eloquent.deleted:*',
+            '\Stalker\Observers\Encoding@onDeleted'
+        );
         /*
         |--------------------------------------------------------------------------
         | Register the Utilities

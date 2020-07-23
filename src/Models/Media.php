@@ -2,8 +2,6 @@
 
 namespace Stalker\Models;
 
-use Muleta\Traits\Models\ArchiveTrait;
-
 class Media extends \Spatie\MediaLibrary\Models\Media
 {
     // public $table = 'media';
