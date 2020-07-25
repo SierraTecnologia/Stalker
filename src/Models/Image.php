@@ -5,6 +5,7 @@ namespace Stalker\Models;
 use Croppa;
 use Stalker\Template\Markup\ImageElement;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
+use Support\Models\Base;
 
 /**
  * Polymorphic one to many class that stores images for any model.

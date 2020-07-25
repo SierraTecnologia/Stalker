@@ -6,6 +6,7 @@ use URL;
 use Config;
 use Bkwld\Library\Utils\File;
 use HtmlObject\Element as HtmlElement;
+use Support\Models\Base;
 
 /**
  * Stores the status of an encoding job and the converted outputs.

@@ -1,6 +1,6 @@
 <?php
 
-namespace Facilitador\Http\Controllers;
+namespace Stalker\Http\Controllers;
 
 use Exception;
 use Illuminate\Http\Request;

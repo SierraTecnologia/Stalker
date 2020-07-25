@@ -11,8 +11,8 @@ use Support\Models\Base;
 use Facilitador\Models\Post;
 use Locaravel\Models\Localization;
 use Translation\Models\Language;
-
 use Illuminate\Database\Eloquent\SoftDeletes;
+
 /**
  * Class Photo.
  *
