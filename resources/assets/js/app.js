@@ -11,6 +11,15 @@ window.Vue = require('vue');
 
 window.VueGallery = require('vue-gallery');
 
+window.Cropper = require('cropperjs');
+window.Cropper = 'default' in window.Cropper ? window.Cropper['default'] : window.Cropper;
+window.toastr = require('toastr');
+require('dropzone');
+
+require('nestable2');
+
+
+
 // const app = new Vue({
 //     el: '#app'
 // });

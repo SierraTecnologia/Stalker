@@ -12,7 +12,7 @@ class File extends ArchiveTrait
 
     protected $guarded = [];
 
-    public static $rules = [
+    public $rules = [
         'location' => 'required',
     ];
 }

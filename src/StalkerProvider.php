@@ -24,6 +24,8 @@ use Stalker\Services\Midia\FileService;
 
 class StalkerProvider extends ServiceProvider
 {
+    public $packageName = 'stalker';
+
     use ConsoleTools;
 
     public static $aliasProviders = [
@@ -95,15 +97,7 @@ class StalkerProvider extends ServiceProvider
         /**
          * Stalker Routes
          */
-        Route::group(
-            [
-                'namespace' => '\Stalker\Http\Controllers',
-                'prefix' => \Illuminate\Support\Facades\Config::get('application.routes.main'),
-                'as' => 'rica.',
-            ], function ($router) {
-                include __DIR__.'/../routes/web.php';
-            }
-        );
+        $this->loadRoutesForRiCa(__DIR__.'/../routes');
     }
 
     /**
@@ -111,8 +105,12 @@ class StalkerProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom($this->getPublishesPath('config/medialibrary.php'), 'medialibrary');
         $this->mergeConfigFrom($this->getPublishesPath('config/sitec/stalker.php'), 'sitec.stalker');
+        $this->mergeConfigFrom($this->getPublishesPath('config/encode.php'), 'encode');
+        $this->mergeConfigFrom($this->getPublishesPath('config/image.php'), 'image');
+        $this->mergeConfigFrom($this->getPublishesPath('config/imagecache.php'), 'imagecache');
+        $this->mergeConfigFrom($this->getPublishesPath('config/medialibrary.php'), 'medialibrary');
+        $this->mergeConfigFrom($this->getPublishesPath('config/messenger.php'), 'messenger');
         $this->mergeConfigFrom($this->getPublishesPath('config/mime.php'), 'mime');
         
 
@@ -169,7 +167,7 @@ class StalkerProvider extends ServiceProvider
         // if (!function_exists('stalker_asset')) {
         //     function stalker_asset($path, $secure = null)
         //     {
-        //         return route('stalker.assets').'?path='.urlencode($path);
+        //         return route('rica.stalker.assets').'?path='.urlencode($path);
         //     }
         // }
     }
@@ -198,7 +196,11 @@ class StalkerProvider extends ServiceProvider
             [
             // Paths
             $this->getPublishesPath('config/sitec') => config_path('sitec'),
+            $this->getPublishesPath('config/encode.php') => config_path('encode.php'),
+            $this->getPublishesPath('config/image.php') => config_path('image.php'),
+            $this->getPublishesPath('config/imagecache.php') => config_path('imagecache.php'),
             $this->getPublishesPath('config/medialibrary.php') => config_path('medialibrary.php'),
+            $this->getPublishesPath('config/messenger.php') => config_path('messenger.php'),
             $this->getPublishesPath('config/mime.php') => config_path('mime.php'),
             ], ['config',  'sitec', 'sitec-config']
         );

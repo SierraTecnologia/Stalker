@@ -4,12 +4,11 @@ namespace Stalker\Http\Controllers;
 
 use Request;
 use Stalker\Models\Encoding;
-use Illuminate\Routing\Controller;
 
 /**
  * Hande encoder progress events
  */
-class Encoder extends Controller
+class Encoder extends BaseController
 {
     /**
      * Get the status of an encode

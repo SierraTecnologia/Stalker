@@ -12,7 +12,7 @@ use League\Flysystem\Plugin\ListWith;
 use Stalker\Events\MediaFileAdded;
 use Stalker\Facades\Stalker;
 
-class MediaController extends Controller
+class MediaController extends BaseController
 {
     /**
      * @var string 
@@ -34,7 +34,7 @@ class MediaController extends Controller
         // Check permission
         // $this->authorize('browse_media');
 
-        return Facilitador::view('facilitador::tools.media.index');
+        return Facilitador::view('stalker::media.index');
     }
 
     public function files(Request $request)

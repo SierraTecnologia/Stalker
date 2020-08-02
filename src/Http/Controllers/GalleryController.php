@@ -1,12 +1,11 @@
 <?php
 
-namespace Stalker\Http\Controllers\Midia;
+namespace Stalker\Http\Controllers;
 
 use Config;
-use Stalker\Http\Controllers\Controller;
 use Stalker\Repositories\ImageRepository;
 
-class GalleryController extends Controller
+class GalleryController extends BaseController
 {
     protected $repository;
     public function __construct(ImageRepository $repository)

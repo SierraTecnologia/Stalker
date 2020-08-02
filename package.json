@@ -28,6 +28,8 @@
         "vue-gallery": "^2.0.1",
         "mime-matcher": "^1.0.5",
         "cropperjs": "^1.5.6",
+        "nestable2": "^1.6.0",
+        "toastr": "^2.1.2",
         "dropzone": "^5.0.1",
         "vue2-admin-lte": "^0.4.3",
         "vuefinder": "^0.2.0"

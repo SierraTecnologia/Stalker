@@ -4,10 +4,10 @@ namespace Stalker\Http\Controllers;
 
 use Stalker\Services\StalkerService;
 use Illuminate\Support\Facades\Schema;
-use Population\Repositories\PersonRepository;
+use Telefonica\Repositories\PersonRepository;
 use Stalker\Models\Media;
 
-class HomeController extends Controller
+class HomeController extends BaseController
 {
     protected $service;
 

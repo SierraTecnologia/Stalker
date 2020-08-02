@@ -35,7 +35,7 @@
 
 @section('javascript')
 
-<script type="text/javascript" src="{{ route('stalker.assets').'?path='.urlencode('js/app.js') }}"></script>
+<script type="text/javascript" src="{{ route('rica.stalker.assets').'?path='.urlencode('js/app.js') }}"></script>
 
 
 <script>
