@@ -20,7 +20,7 @@ class CreateMedialibraryFilesTable extends Migration
 
             // Foreign keys
             /** @var \Illuminate\Database\Eloquent\Model $owner */
-            $owner = app(config('medialibrary.relations.owner.model'));
+            $owner = app(config('medialibrary.relations.owner.model', 'App\Models\User'));
 
             $table->integer('owner_id')->unsigned();
             $table->foreign('owner_id')

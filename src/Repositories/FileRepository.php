@@ -6,7 +6,7 @@ use Auth;
 use Config;
 use CryptoService;
 use Stalker\Models\File;
-use Support\Repositories\BaseRepository;
+use Muleta\Repositories\BaseRepository;
 use Stalker\Services\Midia\FileService;
 
 

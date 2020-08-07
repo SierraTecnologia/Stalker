@@ -8,7 +8,7 @@ use CryptoService;
 use Stalker\Models\Imagen as Image;
 use Population\Models\Tag;
 use Stalker\Services\Midia\FileService;
-use Support\Repositories\BaseRepository;
+use Muleta\Repositories\BaseRepository;
 
 
 class ImageRepository extends BaseRepository
