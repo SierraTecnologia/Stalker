@@ -56,7 +56,7 @@ class StalkerProvider extends ServiceProvider
             'Stalker' => [
                 [
                     'text'        => 'Stalker Midias',
-                    'route'       => 'rica.stalker.medias',
+                    'route'       => 'stalker.medias',
                     'icon'        => 'fas fa-fw fa-gavel',
                     'icon_color'  => 'blue',
                     'label_color' => 'success',
@@ -167,7 +167,7 @@ class StalkerProvider extends ServiceProvider
         // if (!function_exists('stalker_asset')) {
         //     function stalker_asset($path, $secure = null)
         //     {
-        //         return route('rica.stalker.assets').'?path='.urlencode($path);
+        //         return route('stalker.assets').'?path='.urlencode($path);
         //     }
         // }
     }
