@@ -16,6 +16,7 @@ use Log;
 use SplFileInfo;
 use Stalker\Facades\CryptoServiceFacade;
 use Stalker\Models\Imagen as ModelImage;
+use Stalker\Models\Media;
 
 class MidiaService
 {

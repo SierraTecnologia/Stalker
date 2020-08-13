@@ -32,6 +32,8 @@
         "toastr": "^2.1.2",
         "dropzone": "^5.0.1",
         "vue2-admin-lte": "^0.4.3",
-        "vuefinder": "^0.2.0"
+        "vuefinder": "^0.2.0",
+        "vue-core-video-player": "^0.1.9",
+        "vue-video-player": "^5.0.2"
     }
 }

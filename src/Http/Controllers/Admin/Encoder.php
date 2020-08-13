@@ -1,6 +1,6 @@
 <?php
 
-namespace Stalker\Http\Controllers;
+namespace Stalker\Http\Controllers\Admin;
 
 use Request;
 use Stalker\Models\Encoding;
@@ -8,7 +8,7 @@ use Stalker\Models\Encoding;
 /**
  * Hande encoder progress events
  */
-class Encoder extends BaseController
+class Encoder extends Controller
 {
     /**
      * Get the status of an encode
