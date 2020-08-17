@@ -29,6 +29,7 @@ class CreateStalkerFilesGroupsVideosTables extends Migration
         Schema::create(
             'videoables', function (Blueprint $table) {
                 $table->increments('id');
+                $table->integer('position')->default(0);
                 $table->unsignedInteger('video_id')->nullable();
                 // $table->foreign('video_id')->references('id')->on('videos');
                 $table->string('videoable_id');

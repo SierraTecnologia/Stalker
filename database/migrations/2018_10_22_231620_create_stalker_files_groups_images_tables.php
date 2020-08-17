@@ -34,6 +34,7 @@ class CreateStalkerFilesGroupsImagesTables extends Migration
                 $table->increments('id');
                 $table->unsignedInteger('imagen_id')->nullable();
                 // $table->foreign('imagen_id')->references('id')->on('imagens');
+                $table->integer('position')->default(0);
                 $table->string('imagenable_id');
                 $table->string('imagenable_type');
             }
