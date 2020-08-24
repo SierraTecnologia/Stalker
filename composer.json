@@ -35,6 +35,7 @@
         "league/flysystem-cached-adapter": "*",
         "league/flysystem-sftp": "*",
         "league/flysystem-ziparchive": "*",
+        "nao-pon/flysystem-google-drive": "~1.1",
         "srmklive/flysystem-dropbox-v2": "*",
         "google/photos-library": ">=1.4",
         "league/mime-type-detection": ">=1.1",

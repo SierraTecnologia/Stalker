@@ -243,7 +243,7 @@ class MediaService
         try {
             $realPath = Storage::disk($this->filesystem)->getDriver()->getAdapter()->getPathPrefix();
 
-            $allowedMimeTypes = \Illuminate\Support\Facades\Config::get('rica.media.allowed_mimetypes', '*');
+            $allowedMimeTypes = \Illuminate\Support\Facades\Config::get('medialibrary.media.allowed_mimetypes', '*');
             if ($allowedMimeTypes != '*' && (is_array($allowedMimeTypes) && !in_array($file->getMimeType(), $allowedMimeTypes))) {
                 throw new Exception(__('generic.mimetype_not_allowed'));
             }

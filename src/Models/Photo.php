@@ -8,7 +8,7 @@ use Carbon\Carbon;
 use Stalker\Entities\PhotoEntity;
 use Illuminate\Database\Eloquent\Collection;
 use Support\Models\Base;
-use Facilitador\Models\Post;
+use Siravel\Models\Blog\Post;
 use Locaravel\Models\Localization;
 use Translation\Models\Language;
 use Illuminate\Database\Eloquent\SoftDeletes;
