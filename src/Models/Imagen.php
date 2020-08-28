@@ -2,17 +2,17 @@
 
 namespace Stalker\Models;
 
-use Muleta\Traits\Models\ArchiveTrait;
-
 use Carbon\Carbon;
+
 use Config;
-use FileService;
 use Exception;
+use FileService;
 use Illuminate\Support\Facades\Cache;
-use Log;
 use Intervention\Image\ImageManagerStatic as InterventionImage;
-use Storage;
+use Log;
+use Muleta\Traits\Models\ArchiveTrait;
 use Spatie\MediaLibrary\Exceptions\FileCannotBeAdded\FileIsTooBig;
+use Storage;
 
 class Imagen extends ArchiveTrait
 {

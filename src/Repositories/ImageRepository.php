@@ -5,10 +5,10 @@ namespace Stalker\Repositories;
 use Cms;
 use Config;
 use CryptoService;
-use Stalker\Models\Imagen as Image;
-use Population\Models\Tag;
-use Stalker\Services\Midia\FileService;
+use Informate\Models\Tag;
 use Muleta\Repositories\BaseRepository;
+use Stalker\Models\Imagen as Image;
+use Stalker\Services\Midia\FileService;
 
 
 class ImageRepository extends BaseRepository

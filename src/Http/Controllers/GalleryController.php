@@ -4,6 +4,7 @@ namespace Stalker\Http\Controllers;
 
 use Config;
 use Stalker\Repositories\ImageRepository;
+use Templeiro;
 
 class GalleryController extends BaseController
 {
@@ -11,7 +12,7 @@ class GalleryController extends BaseController
     public function __construct(ImageRepository $repository)
     {
         $this->repository = $repository;
-        $this->middleware('subscription');
+        // $this->middleware('subscription');
     }
 
     /**
@@ -28,9 +29,12 @@ class GalleryController extends BaseController
             abort(404);
         }
 
-        return view('facilitador::midia.gallery.all')
-            ->with('tags', $tags)
-            ->with('images', $images);
+        return Templeiro::populateView('midia.gallery.all',
+            [
+                'tags' => $tags,
+                'images' => $images
+            ]
+        );
     }
 
     /**
@@ -47,9 +51,12 @@ class GalleryController extends BaseController
             abort(404);
         }
 
-        return view('facilitador::midia.gallery.all')
-            ->with('tags', $tags)
-            ->with('images', $images);
+        return Templeiro::populateView('midia.gallery.all',
+            [
+                'tags' => $tags,
+                'images' => $images
+            ]
+        );
     }
 
     /**
@@ -68,9 +75,12 @@ class GalleryController extends BaseController
             abort(404);
         }
 
-        return view('facilitador::midia.gallery.show')
-            ->with('tags', $tags)
-            ->with('images', $images)
-            ->with('title', $tag);
+        return Templeiro::populateView('midia.gallery.show',
+            [
+                'title' => $tag,
+                'tags' => $tags,
+                'images' => $images
+            ]
+        );
     }
 }

@@ -10,8 +10,8 @@ $loadingRoutes = [
 Route::group(
     ['middleware' => ['web']], function () use ($loadingRoutes) {
 
-        Route::prefix('stalker')->group(
-            function () use ($loadingRoutes) {
+        // Route::prefix('stalker')->group(
+        //     function () use ($loadingRoutes) {
                 Route::group(
                     ['as' => 'stalker.'], function () use ($loadingRoutes) {
 
@@ -22,8 +22,8 @@ Route::group(
 
                     }
                 );
-            }
-        );
+        //     }
+        // );
 
     }
 );

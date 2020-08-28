@@ -4,8 +4,8 @@ namespace Stalker\Models;
 
 use Croppa;
 use Stalker\Template\Markup\ImageElement;
-use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Support\Models\Base;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
  * Polymorphic one to many class that stores images for any model.
@@ -57,6 +57,7 @@ class Image extends Base
         'crop_box'    => 'object',
         'focal_point' => 'object',
     ];
+
 
     /**
      * Validation rules
