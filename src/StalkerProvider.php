@@ -2,25 +2,25 @@
 
 namespace Stalker;
 
-use Illuminate\Foundation\AliasLoader;
-use Illuminate\Support\ServiceProvider;
-use Stalker\Services\StalkerService;
-use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\View;
-
-use Log;
 use App;
 use Config;
-use Route;
+use Illuminate\Contracts\Events\Dispatcher;
+use Illuminate\Foundation\AliasLoader;
 use Illuminate\Routing\Router;
+
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\View;
+use Illuminate\Support\ServiceProvider;
+use JeroenNoten\LaravelAdminLte\Events\BuildingMenu;
+use Log;
 
 use Muleta\Traits\Providers\ConsoleTools;
 
+use Route;
 use Stalker\Facades\Stalker as StalkerFacade;
-use Illuminate\Contracts\Events\Dispatcher;
-use JeroenNoten\LaravelAdminLte\Events\BuildingMenu;
-
 use Stalker\Services\Midia\FileService;
+
+use Stalker\Services\StalkerService;
 
 class StalkerProvider extends ServiceProvider
 {
@@ -118,13 +118,15 @@ class StalkerProvider extends ServiceProvider
         $this->routes();
 
         $this->app->singleton(
-            'stalker', function () {
+            'stalker',
+            function () {
                 return new Stalker();
             }
         );
 
         $this->app->bind(
-            'FileService', function ($app) {                                                                                                                                                                                                                      
+            'FileService',
+            function ($app) {
                 return new FileService();
             }
         );
@@ -147,7 +149,8 @@ class StalkerProvider extends ServiceProvider
          * Singleton Stalker
          */
         $this->app->singleton(
-            StalkerService::class, function ($app) {
+            StalkerService::class,
+            function ($app) {
                 Log::channel('sitec-stalker')->info('Singleton Stalker');
                 return new StalkerService(\Illuminate\Support\Facades\Config::get('sitec.stalker'));
             }
@@ -202,7 +205,8 @@ class StalkerProvider extends ServiceProvider
             $this->getPublishesPath('config/medialibrary.php') => config_path('medialibrary.php'),
             $this->getPublishesPath('config/messenger.php') => config_path('messenger.php'),
             $this->getPublishesPath('config/mime.php') => config_path('mime.php'),
-            ], ['config',  'sitec', 'sitec-config']
+            ],
+            ['config',  'sitec', 'sitec-config']
         );
 
         // // Publish stalker css and js to public directory
@@ -216,8 +220,6 @@ class StalkerProvider extends ServiceProvider
 
         // Register Migrations
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-
-
     }
 
     private function loadViews()
@@ -228,9 +230,9 @@ class StalkerProvider extends ServiceProvider
         $this->publishes(
             [
             $viewsPath => base_path('resources/views/vendor/stalker'),
-            ], ['views',  'sitec', 'sitec-views']
+            ],
+            ['views',  'sitec', 'sitec-views']
         );
-
     }
     
     private function loadTranslations()
@@ -239,7 +241,8 @@ class StalkerProvider extends ServiceProvider
         $this->publishes(
             [
             $this->getResourcesPath('lang') => resource_path('lang/vendor/stalker')
-            ], ['lang',  'sitec', 'sitec-lang', 'translations']
+            ],
+            ['lang',  'sitec', 'sitec-lang', 'translations']
         );
 
         // Load translations
@@ -248,17 +251,17 @@ class StalkerProvider extends ServiceProvider
 
 
     /**
-     * 
+     *
      */
     private function loadLogger()
     {
         Config::set(
-            'logging.channels.sitec-stalker', [
+            'logging.channels.sitec-stalker',
+            [
             'driver' => 'single',
             'path' => storage_path('logs/sitec-stalker.log'),
             'level' => env('APP_LOG_LEVEL', 'debug'),
             ]
         );
     }
-
 }
