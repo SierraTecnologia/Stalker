@@ -27,7 +27,7 @@
     ],
     "require": {
         "php": "^7.4",
-        "laravel/framework": "^6.0|^7.0|^8.0",
+        "laravel/framework": "^6.0|^7.0",
         "sierratecnologia/muleta": "dev-master",
         "fideloper/proxy": ">=4.0",
         "league/pipeline": "*",
