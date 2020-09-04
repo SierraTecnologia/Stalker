@@ -231,7 +231,7 @@ class StalkerProvider extends ServiceProvider
             [
             $viewsPath => base_path('resources/views/vendor/stalker'),
             ],
-            ['views',  'sitec', 'sitec-views']
+            ['views',  'sitec', 'sitec-views', 'stalker']
         );
     }
     
@@ -242,7 +242,7 @@ class StalkerProvider extends ServiceProvider
             [
             $this->getResourcesPath('lang') => resource_path('lang/vendor/stalker')
             ],
-            ['lang',  'sitec', 'sitec-lang', 'translations']
+            ['lang',  'sitec', 'stalker']
         );
 
         // Load translations

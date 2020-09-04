@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 
+ *
  */
 Route::get('assets', ['uses' => 'BaseController@assets', 'as' => 'assets']);
 Route::get('medias', 'HomeController@medias')->name('medias');
