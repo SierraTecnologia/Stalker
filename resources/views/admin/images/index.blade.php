@@ -35,11 +35,11 @@
         <div class="well text-center">Searched for "{!! $term !!}".</div>
         @endif
 
-        @if ($images->isEmpty())
+        @if ($results->isEmpty())
             <div class="well text-center">No images found.</div>
         @else
             <div class="row">
-                @foreach($images as $image)
+                @foreach($results as $image)
                     <div class="col-md-3 panel raw-margin-top-24">
                         <div class="thumbnail">
                             <a href="{!! route('admin.images.edit', [$image->id]) !!}">

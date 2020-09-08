@@ -4,18 +4,20 @@ namespace Stalker\Http\Controllers\Admin;
 
 use Config;
 use Crypto;
+use Facilitador\Services\ValidationService;
 use FileService;
 use Illuminate\Http\Request;
 use Siravel;
-use Storage;
+use Stalker\Http\Requests\ImagesRequest;
 use Stalker\Models\Image;
 use Stalker\Repositories\ImageRepository;
-use Stalker\Http\Requests\ImagesRequest;
+use Storage;
 use Support\Services\RiCaResponseService;
-use Facilitador\Services\ValidationService;
 
 class ImagesController extends Controller
 {
+    const VIEWS = "stalker::admin.images";
+    
     public function __construct(ImageRepository $repository)
     {
         parent::__construct();

@@ -5,7 +5,7 @@
 @section('content')
 
     <div class="col-md-12 mt-2">
-        @include('admin.features.midia.files.breadcrumbs', ['location' => ['create']])
+        @include('stalker::admin.files.breadcrumbs', ['location' => ['create']])
     </div>
 
     <div class="col-md-12">

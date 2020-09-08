@@ -6,7 +6,7 @@
         <h1 class="page-header">{!! trans('features.files') !!}</h1>
     </div>
 
-    @include('admin.features.midia.files.breadcrumbs', ['location' => ['edit']])
+    @include('stalker::admin.files.breadcrumbs', ['location' => ['edit']])
 
     <div class="row raw-margin-bottom-48 raw-margin-top-48 text-center">
         <a class="btn btn-default" href="{!! FileService::fileAsDownload($files->name, $files->location) !!}"><span class="fa fa-download"></span> {!! trans('features.download') !!}: {!! $files->name !!}</a>

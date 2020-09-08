@@ -5,7 +5,7 @@
         <h1 class="page-header">{!! trans('features.files') !!}</h1>
     </div>
 
-    @include('admin.features.midia.files.breadcrumbs', ['location' => ['create']])
+    @include('stalker::admin.files.breadcrumbs', ['location' => ['create']])
 
     <div class="row">
         {!! Form::open(['url' => 'admin/files/upload', 'files' => true, 'class' => 'dropzone', 'id' => 'fileDropzone']); !!}
