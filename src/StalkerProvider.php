@@ -24,7 +24,10 @@ use Stalker\Services\StalkerService;
 
 class StalkerProvider extends ServiceProvider
 {
+    use ConsoleTools;
+
     public $packageName = 'stalker';
+    const pathVendor = 'sierratecnologia/stalker';
 
     use ConsoleTools;
 
@@ -52,17 +55,35 @@ class StalkerProvider extends ServiceProvider
      * Rotas do Menu
      */
     public static $menuItens = [
+        [
+            'text' => 'Painel',
+            'icon' => 'fas fa-fw fa-search',
+            'icon_color' => "blue",
+            'label_color' => "success",
+            'section' => "painel",
+            'level'       => 3, // 0 (Public), 1, 2 (Admin) , 3 (Root)
+        ],
         'Painel' => [
-            'Stalker' => [
+            // 'Stalker' => [
                 [
-                    'text'        => 'Stalker Midias',
+                    'text'        => 'Albums',
+                    'route'       => 'stalker.medias', // @todo
+                    'icon'        => 'fas fa-fw fa-gavel',
+                    'icon_color'  => 'blue',
+                    'label_color' => 'success',
+                    'section'       => 'painel',
+                    // 'access' => \App\Models\Role::$ADMIN
+                ],
+                [
+                    'text'        => 'Biblioteca',
                     'route'       => 'stalker.medias',
                     'icon'        => 'fas fa-fw fa-gavel',
                     'icon_color'  => 'blue',
                     'label_color' => 'success',
+                    'section'       => 'painel',
                     // 'access' => \App\Models\Role::$ADMIN
                 ],
-            ],
+            // ],
         ],
     ];
 
