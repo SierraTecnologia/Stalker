@@ -1,6 +1,6 @@
 <?php
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
 
 class CreateStalkerFilesGroupsImagesTables extends Migration
 {
@@ -13,7 +13,8 @@ class CreateStalkerFilesGroupsImagesTables extends Migration
     public function up()
     {
         Schema::create(
-            'imagens', function (Blueprint $table) {
+            'imagens',
+            function (Blueprint $table) {
                 $table->increments('id');
                 $table->string('location')->nullable();
                 $table->string('name')->nullable();
@@ -30,7 +31,8 @@ class CreateStalkerFilesGroupsImagesTables extends Migration
             }
         );
         Schema::create(
-            'imagenables', function (Blueprint $table) {
+            'imagenables',
+            function (Blueprint $table) {
                 $table->increments('id');
                 $table->unsignedInteger('imagen_id')->nullable();
                 // $table->foreign('imagen_id')->references('id')->on('imagens');
@@ -40,27 +42,49 @@ class CreateStalkerFilesGroupsImagesTables extends Migration
             }
         );
 
-        
-        Schema::create(
-            'photo_albums', function (Blueprint $table) {
-                $table->engine = 'InnoDB';
-                $table->increments('id')->unsigned();
-                $table->integer('position')->nullable();
-                $table->string('name', 255);
-                $table->text('description')->nullable();
-                $table->string('folder_id', 255);
-                $table->unsignedInteger('user_id')->nullable();
-                $table->foreign('user_id')->references('id')->on('users')->onDelete('set null');
-                $table->unsignedInteger('user_id_edited')->nullable();
-                $table->foreign('user_id_edited')->references('id')->on('users')->onDelete('set null');
-                $table->timestamps();
-                $table->softDeletes();
+        try {
+            Schema::create(
+                'photo_albums',
+                function (Blueprint $table) {
+                    $table->engine = 'InnoDB';
+                    $table->increments('id')->unsigned();
+                    $table->integer('position')->nullable();
+                    $table->string('name', 255);
+                    $table->text('description')->nullable();
+                    $table->string('folder_id', 255);
+                    $table->unsignedInteger('user_id')->nullable();
+                    $table->foreign('user_id')->references('id')->on('users')->onDelete('set null');
+                    $table->unsignedInteger('user_id_edited')->nullable();
+                    $table->foreign('user_id_edited')->references('id')->on('users')->onDelete('set null');
+                    $table->timestamps();
+                    $table->softDeletes();
+                }
+            );
+        } catch (\Throwable $th) {
+            try {
+                Schema::create(
+                    'photo_albums',
+                    function (Blueprint $table) {
+                        $table->engine = 'InnoDB';
+                        $table->increments('id')->unsigned();
+                        $table->integer('position')->nullable();
+                        $table->string('name', 255);
+                        $table->text('description')->nullable();
+                        $table->string('folder_id', 255);
+                        $table->unsignedInteger('user_id')->nullable();
+                        $table->unsignedInteger('user_id_edited')->nullable();
+                        $table->timestamps();
+                        $table->softDeletes();
+                    }
+                );
+            } catch (\Throwable $th) {
             }
-        );
+        }
         
 
         Schema::create(
-            'photos', function (Blueprint $table) {
+            'photos',
+            function (Blueprint $table) {
                 $table->engine = 'InnoDB';
                 $table->increments('id')->unsigned();
 
@@ -88,7 +112,8 @@ class CreateStalkerFilesGroupsImagesTables extends Migration
 
 
         Schema::create(
-            'thumbnails', function (Blueprint $table) {
+            'thumbnails',
+            function (Blueprint $table) {
                 $table->increments('id');
                 $table->string('path')->default('');
                 $table->string('relative_url')->default('');
@@ -100,7 +125,8 @@ class CreateStalkerFilesGroupsImagesTables extends Migration
             }
         );
         Schema::create(
-            'thumbnailables', function (Blueprint $table) {
+            'thumbnailables',
+            function (Blueprint $table) {
                 $table->increments('id');
                 $table->unsignedInteger('thumbnail_id')->nullable();
                 // $table->foreign('thumbnail_id')->references('id')->on('thumbnails');
@@ -108,7 +134,6 @@ class CreateStalkerFilesGroupsImagesTables extends Migration
                 $table->string('thumbnailable_type');
             }
         );
-
     }
 
     /**
@@ -125,5 +150,4 @@ class CreateStalkerFilesGroupsImagesTables extends Migration
         Schema::dropIfExists('imagenables');
         Schema::dropIfExists('imagens');
     }
-
 }

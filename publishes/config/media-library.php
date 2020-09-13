@@ -91,7 +91,7 @@ return [
          * images. By default we optimize for filesize and create variations that each are 20%
          * smaller than the previous one. More info in the documentation.
          *
-         * https://docs.spatie.be/laravel-medialibrary/v7/advanced-usage/generating-responsive-images
+         * https://docs.spatie.be/laravel-media-library/v7/advanced-usage/generating-responsive-images
          */
         'width_calculator' => Spatie\MediaLibrary\ResponsiveImages\WidthCalculator\FileSizeOptimizedWidthCalculator::class,
 
@@ -103,7 +103,7 @@ return [
 
         /*
          * This class will generate the tiny placeholder used for progressive image loading. By default
-         * the medialibrary will use a tiny blurred jpg image.
+         * the media-library will use a tiny blurred jpg image.
          */
         'tiny_placeholder_generator' => Spatie\MediaLibrary\ResponsiveImages\TinyPlaceholderGenerator\Blurred::class,
     ],
@@ -179,7 +179,7 @@ return [
 
     /*
      * The path where to store temporary files while performing image conversions.
-     * If set to null, storage_path('medialibrary/temp') will be used.
+     * If set to null, storage_path('media-library/temp') will be used.
      */
     'temporary_directory_path' => null,
 

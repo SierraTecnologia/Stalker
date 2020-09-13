@@ -2,16 +2,16 @@
 
 namespace Stalker\Traits;
 
-use Log;
-use Support\Models\Base;
 use Auth;
 use Illuminate\Database\Eloquent\Builder;
-use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
-use Spatie\MediaLibrary\Models\Media;
+use Log;
+use Spatie\MediaLibrary\InteractsWithMedia;
+use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use Support\Models\Base;
 
 trait HasPhoto
 {
-    use HasMediaTrait;
+    use InteractsWithMedia;
 
     public static function bootHasPhoto()                                                                                                                                                             
     {

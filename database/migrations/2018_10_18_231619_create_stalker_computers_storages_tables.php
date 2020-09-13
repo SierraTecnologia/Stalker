@@ -1,6 +1,6 @@
 <?php
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
 
 class CreateStalkerComputersStoragesTables extends Migration
 {
@@ -12,31 +12,34 @@ class CreateStalkerComputersStoragesTables extends Migration
      */
     public function up()
     {
-        
-        Schema::create(
-            'files', function (Blueprint $table) {
-                $table->engine = 'InnoDB';
-                $table->increments('id')->unsigned();
-                $table->string('name', 255)->nullable();
-                $table->string('description')->nullable();
-                $table->string('url', 255)->nullable();
-                $table->string('path', 255)->nullable();
-                $table->string('type', 255)->nullable();
-                $table->string('filename', 255)->nullable();
-                $table->string('size', 255)->nullable();
-                $table->string('last_modified', 255)->nullable();
+        if (!Schema::hasTable('files')) {
+            Schema::create(
+                'files',
+                function (Blueprint $table) {
+                    $table->engine = 'InnoDB';
+                    $table->increments('id')->unsigned();
+                    $table->string('name', 255)->nullable();
+                    $table->string('description')->nullable();
+                    $table->string('url', 255)->nullable();
+                    $table->string('path', 255)->nullable();
+                    $table->string('type', 255)->nullable();
+                    $table->string('filename', 255)->nullable();
+                    $table->string('size', 255)->nullable();
+                    $table->string('last_modified', 255)->nullable();
 
-                $table->string('location')->nullable();
-                $table->string('tags')->nullable();
-                $table->text('details')->nullable();
-                $table->string('extension')->nullable(); //"json"
-                $table->string('mime')->nullable();
-                $table->timestamps();
-                $table->softDeletes();
-            }
-        );
+                    $table->string('location')->nullable();
+                    $table->string('tags')->nullable();
+                    $table->text('details')->nullable();
+                    $table->string('extension')->nullable(); //"json"
+                    $table->string('mime')->nullable();
+                    $table->timestamps();
+                    $table->softDeletes();
+                }
+            );
+        }
         Schema::create(
-            'fileables', function (Blueprint $table) {
+            'fileables',
+            function (Blueprint $table) {
                 $table->increments('id');
                 $table->unsignedInteger('file_id')->nullable();
                 // $table->foreign('file_id')->references('id')->on('files');
@@ -48,7 +51,8 @@ class CreateStalkerComputersStoragesTables extends Migration
         
         
         Schema::create(
-            'computer_files', function (Blueprint $table) {
+            'computer_files',
+            function (Blueprint $table) {
                 $table->increments('id');
                 $table->string('name')->nullable();
                 $table->string('location')->nullable();
@@ -95,5 +99,4 @@ class CreateStalkerComputersStoragesTables extends Migration
     {
         Schema::dropIfExists('directorys');
     }
-
 }
