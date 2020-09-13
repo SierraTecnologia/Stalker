@@ -58,6 +58,6 @@ class StalkerCreateImages extends Migration
      */
     public function down()
     {
-        Schema::drop('images');
+        Schema::dropIfExists('images');
     }
 }

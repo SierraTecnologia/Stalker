@@ -93,7 +93,7 @@ class CreateStalkerComputersStoragesTables extends Migration
      */
     public function down()
     {
-        Schema::drop('directorys');
+        Schema::dropIfExists('directorys');
     }
 
 }

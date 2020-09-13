@@ -39,6 +39,6 @@ class EncodablesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('encodings');
+        Schema::dropIfExists('encodings');
     }
 }
