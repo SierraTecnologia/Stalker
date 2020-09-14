@@ -2,9 +2,9 @@
 
 namespace Stalker\Processing;
 
-use Log;
 use App\Models\User;
-use SiObjects\Support\Trabalhando\Picture;
+use Log;
+use Stalker\Support\Trabalhando\Picture;
 
 class NewPhoto
 {
