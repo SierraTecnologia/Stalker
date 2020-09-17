@@ -57,6 +57,6 @@ This software is released under [The MIT License (MIT)](LICENSE).
 
 (c) 2008-2020 SierraTecnologia, Some rights reserved.
 
-
+https://github.com/sampotts/plyr
 
         "bkwld/croppa": "^4.0",
