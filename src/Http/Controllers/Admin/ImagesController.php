@@ -12,7 +12,7 @@ use Stalker\Http\Requests\ImagesRequest;
 use MediaManager\Models\Image;
 use Stalker\Repositories\ImageRepository;
 use Storage;
-use Support\Services\RiCaResponseService;
+use Muleta\Services\RiCaResponseService;
 
 class ImagesController extends Controller
 {

@@ -15,7 +15,7 @@ use Siravel;
 use Stalker\Repositories\FileRepository;
 use Stalker\Services\Midia\FileService;
 use Storage;
-use Support\Services\RiCaResponseService;
+use Muleta\Services\RiCaResponseService;
 
 class FilesController extends Controller
 {
