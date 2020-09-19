@@ -9,7 +9,7 @@ use FileService;
 use Illuminate\Http\Request;
 use Siravel;
 use Stalker\Http\Requests\ImagesRequest;
-use Stalker\Models\Image;
+use MediaManager\Models\Image;
 use Stalker\Repositories\ImageRepository;
 use Storage;
 use Support\Services\RiCaResponseService;

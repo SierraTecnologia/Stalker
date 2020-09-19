@@ -6,3 +6,4 @@ build.json
 /node_modules
 .env
 *.sqlite
+*.zip
