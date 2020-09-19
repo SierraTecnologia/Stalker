@@ -29,7 +29,8 @@ class GalleryController extends BaseController
             abort(404);
         }
 
-        return Templeiro::populateView('midia.gallery.all',
+        return Templeiro::populateView(
+            'midia.gallery.all',
             [
                 'tags' => $tags,
                 'images' => $images
@@ -51,7 +52,8 @@ class GalleryController extends BaseController
             abort(404);
         }
 
-        return Templeiro::populateView('midia.gallery.all',
+        return Templeiro::populateView(
+            'midia.gallery.all',
             [
                 'tags' => $tags,
                 'images' => $images
@@ -75,7 +77,8 @@ class GalleryController extends BaseController
             abort(404);
         }
 
-        return Templeiro::populateView('midia.gallery.show',
+        return Templeiro::populateView(
+            'midia.gallery.show',
             [
                 'title' => $tag,
                 'tags' => $tags,

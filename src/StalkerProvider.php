@@ -83,7 +83,7 @@ class StalkerProvider extends ServiceProvider
                     'section'       => 'painel',
                     // 'access' => \App\Models\Role::$ADMIN
                 ],
-            // ],
+                // ],
         ],
     ];
 

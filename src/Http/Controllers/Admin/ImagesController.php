@@ -118,9 +118,11 @@ class ImagesController extends Controller
      */
     public function upload(Request $request)
     {
-        $validation = app(ValidationService::class)->check([
+        $validation = app(ValidationService::class)->check(
+            [
             'location' => ['required'],
-        ]);
+            ]
+        );
 
         if (!$validation['errors']) {
             $file = $request->file('location');
@@ -223,7 +225,7 @@ class ImagesController extends Controller
     /**
      * Bulk image delete
      *
-     * @param  string $ids
+     * @param string $ids
      *
      * @return Redirect
      */

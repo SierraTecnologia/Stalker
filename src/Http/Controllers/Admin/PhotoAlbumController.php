@@ -79,7 +79,7 @@ class PhotoAlbumController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param $id
+     * @param  $id
      * @return Response
      */
 
@@ -91,7 +91,7 @@ class PhotoAlbumController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param $id
+     * @param  $id
      * @return Response
      */
     public function destroy(PhotoAlbum $photoalbum)
@@ -108,20 +108,24 @@ class PhotoAlbumController extends Controller
     {
         $photo_albums = PhotoAlbum::with('language')
             ->get()
-            ->map(function ($photo_album) {
-                return [
+            ->map(
+                function ($photo_album) {
+                    return [
                     'id' => $photo_album->id,
                     'title' => $photo_album->title,
                     'language' => isset($photo_album->language) ? $photo_album->language->name : "",
                     'created_at' => $photo_album->created_at->format('d.m.Y.'),
-                ];
-            });
+                    ];
+                }
+            );
 
         return Datatables::of($photo_albums)
             ->edit_column('images_count', '<a class="btn btn-primary btn-sm" >{{ \App\Photo::where(\'photo_album_id\', \'=\', $id)->count() }}</a>')
-            ->add_column('actions', '<a href="{{{ url(\'girl/photoalbum/\' . $id . \'/edit\' ) }}}" class="btn btn-success btn-sm iframe" ><span class="glyphicon glyphicon-pencil"></span>  {{ trans("girl/modal.edit") }}</a>
+            ->add_column(
+                'actions', '<a href="{{{ url(\'girl/photoalbum/\' . $id . \'/edit\' ) }}}" class="btn btn-success btn-sm iframe" ><span class="glyphicon glyphicon-pencil"></span>  {{ trans("girl/modal.edit") }}</a>
                     <a href="{{{ url(\'girl/photoalbum/\' . $id . \'/delete\' ) }}}" class="btn btn-sm btn-danger iframe"><span class="glyphicon glyphicon-trash"></span> {{ trans("girl/modal.delete") }}</a>
-                    <input type="hidden" name="row" value="{{$id}}" id="row">')
+                    <input type="hidden" name="row" value="{{$id}}" id="row">'
+            )
             ->remove_column('id')
             ->make();
     }
