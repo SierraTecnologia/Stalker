@@ -2,19 +2,19 @@
 
 namespace Stalker\Http\Controllers\Admin;
 
-use Siravel;
+use App\Http\Requests\FileRequest;
 use Config;
-use Storage;
-use Redirect;
-use Response;
-use Exception;
 use Crypto;
+use Exception;
 use Finder\Models\Digital\Midia\File;
 use Illuminate\Http\Request;
-use App\Http\Requests\FileRequest;
-use Stalker\Services\Midia\FileService;
-use Facilitador\Services\ValidationService;
+use Muleta\Services\ValidationService;
+use Redirect;
+use Response;
+use Siravel;
 use Stalker\Repositories\FileRepository;
+use Stalker\Services\Midia\FileService;
+use Storage;
 use Support\Services\RiCaResponseService;
 
 class FilesController extends Controller

@@ -13,7 +13,7 @@ use Finder\Models\Digital\Midia\File;
 use Illuminate\Http\Request;
 use App\Http\Requests\FileRequest;
 use Stalker\Services\Midia\FileService;
-use Facilitador\Services\ValidationService;
+use Muleta\Services\ValidationService;
 use Stalker\Repositories\FileRepository;
 use Support\Services\RiCaResponseService;
 
