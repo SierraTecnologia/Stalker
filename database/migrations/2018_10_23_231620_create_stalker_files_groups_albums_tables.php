@@ -50,6 +50,34 @@ class CreateStalkerFilesGroupsAlbumsTables extends Migration
             } catch (\Throwable $th) {
             }
         }
+
+
+        Schema::create(
+            'photos',
+            function (Blueprint $table) {
+                $table->engine = 'InnoDB';
+                $table->increments('id')->unsigned();
+
+                $table->text('description');
+                $table->string('path')->default('');
+                $table->string('relative_url')->default('');
+                $table->string('avg_color', 7)->default('');
+                $table->boolean('is_published')->default(false);
+
+                $table->string('metadata')->default('');
+                $table->unsignedInteger('created_by_user_id')->nullable();
+            
+                $table->integer('position')->nullable();
+                $table->boolean('slider')->nullable();
+                $table->string('filename', 255);
+                $table->string('name', 255)->nullable();
+                $table->unsignedInteger('photo_album_id')->nullable();
+                $table->foreign('photo_album_id')->references('id')->on('photo_albums')->onDelete('set null');
+                $table->boolean('album_cover')->nullable();
+                $table->timestamps();
+                $table->softDeletes();
+            }
+        );
     }
 
     /**
@@ -59,6 +87,7 @@ class CreateStalkerFilesGroupsAlbumsTables extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('photos');
         Schema::dropIfExists('photo_albums');
     }
 }

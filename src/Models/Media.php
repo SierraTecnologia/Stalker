@@ -2,7 +2,9 @@
 
 namespace Stalker\Models;
 
-class Media extends \Spatie\MediaLibrary\MediaCollections\Models\Media
+use MediaManager\Models\Media as Base;
+
+class Media extends Base
 {
     // public $table = 'media';
 
