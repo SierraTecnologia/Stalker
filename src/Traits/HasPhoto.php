@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Log;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Support\Models\Base;
+use Pedreiro\Models\Base;
 
 trait HasPhoto
 {

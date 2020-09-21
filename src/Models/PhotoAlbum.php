@@ -2,7 +2,7 @@
 
 namespace Stalker\Models;
 
-use Support\Models\Base;
+use Pedreiro\Models\Base;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Translation\Models\Language;

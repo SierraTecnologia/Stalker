@@ -2,7 +2,7 @@
 
 namespace Stalker\Models;
 
-use Support\Models\Base;
+use Pedreiro\Models\Base;
 
 /**
  * Polymorphic one to many class that stores images for any model.

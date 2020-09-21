@@ -7,7 +7,7 @@ use App\Contants\Tables;
 use Carbon\Carbon;
 use Stalker\Entities\PhotoEntity;
 use Illuminate\Database\Eloquent\Collection;
-use Support\Models\Base;
+use Pedreiro\Models\Base;
 use Siravel\Models\Blog\Post;
 use Locaravel\Models\Localization;
 use Translation\Models\Language;
