@@ -2,7 +2,7 @@
 
 namespace Stalker\Http\Resources;
 
-use Stalker\Entities\ThumbnailEntity;
+use MediaManager\Entities\ThumbnailEntity;
 use Illuminate\Http\Resources\Json\Resource;
 use Illuminate\Support\Facades\Storage;
 use function SiUtils\html_purify;

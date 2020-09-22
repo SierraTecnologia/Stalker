@@ -1,6 +1,6 @@
 <?php
 
-namespace Stalker\Services\Midia;
+namespace Stalker\Services;
 
 use Crypto as CryptoServiceForFiles;
 use Exception;

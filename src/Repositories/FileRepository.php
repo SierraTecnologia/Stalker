@@ -7,7 +7,7 @@ use Config;
 use CryptoService;
 use Stalker\Models\File;
 use Muleta\Repositories\BaseRepository;
-use Stalker\Services\Midia\FileService;
+use Stalker\Services\FileService;
 
 
 class FileRepository extends BaseRepository

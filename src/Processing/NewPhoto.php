@@ -3,15 +3,14 @@
 namespace Stalker\Processing;
 
 use App\Models\User;
+use FaceDetector;
 use Log;
-use Stalker\Support\Trabalhando\Picture;
+use Stalker\Processing;
 
 class NewPhoto
 {
-    
     public function __construct()
     {
-        
     }
 
     public function actions()
@@ -22,5 +21,4 @@ class NewPhoto
         // echo $json;
         $facedetect->toJpeg();
     }
-
 }

@@ -4,11 +4,10 @@
  * Throws exception if face was not detected in `faceDetect` call.
  */
 
-namespace Stalker\Exception;
+namespace Stalker\Exceptions;
 
 use Exception;
 
 class NoFaceException extends Exception
 {
-
 }

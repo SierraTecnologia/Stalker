@@ -1,8 +1,8 @@
 <?php
 
-namespace Stalker\Managers;
+namespace Stalker\Contracts;
 
-use Stalker\Entities\PhotoEntity;
+use MediaManager\Entities\PhotoEntity;
 
 /**
  * Interface PhotoManager.

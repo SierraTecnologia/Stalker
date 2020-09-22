@@ -1,20 +1,20 @@
 <?php
 
-namespace Stalker\Managers\Photo;
+namespace Stalker\Managers;
 
-use Stalker\Models\Photo;
-use Stalker\Services\Image\Contracts\ImageProcessor;
-use Locaravel\Managers\LocationManager;
-use Stalker\Managers\PhotoManager;
-use Stalker\Entities\PhotoEntity;
 use Illuminate\Contracts\Filesystem\Factory as Storage;
 use Illuminate\Database\ConnectionInterface as Database;
+use Locaravel\Managers\LocationManager;
+use MediaManager\Entities\PhotoEntity;
+use Stalker\Contracts\PhotoManager;
+use Stalker\Models\Photo;
+use Stalker\Contracts\ImageProcessor;
 use function SiUtils\Helper\str_unique;
 
 /**
  * Class ARPhotoManager.
  *
- * @package Stalker\Managers\Photo
+ * @package Stalker\Contracts
  */
 class ARPhotoManager implements PhotoManager
 {
@@ -109,7 +109,7 @@ class ARPhotoManager implements PhotoManager
         $attributes = $this->validator->validateForUpdate($attributes);
 
         /**
- * @var Photo $photo 
+ * @var Photo $photo
 */
         $photo = (new Photo)
             ->newQuery()
@@ -132,7 +132,7 @@ class ARPhotoManager implements PhotoManager
     public function getById(int $id): PhotoEntity
     {
         /**
- * @var Photo $photo 
+ * @var Photo $photo
 */
         $photo = (new Photo)
             ->newQuery()
@@ -148,7 +148,7 @@ class ARPhotoManager implements PhotoManager
     public function deleteById(int $id): PhotoEntity
     {
         /**
- * @var Photo $photo 
+ * @var Photo $photo
 */
         $photo = (new Photo)
             ->newQuery()

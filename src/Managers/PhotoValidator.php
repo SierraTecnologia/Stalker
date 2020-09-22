@@ -1,21 +1,21 @@
 <?php
 
-namespace Stalker\Managers\Photo;
+namespace Stalker\Managers;
 
 use App\Contants\Tables;
-use Locaravel\Rules\LatitudeRule;
-use Locaravel\Rules\LongitudeRule;
 use Illuminate\Contracts\Config\Repository as Config;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Validation\Factory as ValidatorFactory;
 use Illuminate\Validation\Rule;
 use Illuminate\Validation\ValidationException;
+use Locaravel\Rules\LatitudeRule;
+use Locaravel\Rules\LongitudeRule;
 use function SiUtils\Helper\validator_filter_attributes;
 
 /**
  * Class PhotoValidator.
  *
- * @package Stalker\Managers\Photo
+ * @package Stalker\Contracts
  */
 class PhotoValidator
 {

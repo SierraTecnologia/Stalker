@@ -3,7 +3,7 @@
  * Importar, exportar, converter e migrar imagens.
  */
 
-namespace Stalker\Services\Midia;
+namespace Stalker\Services;
 
 use CryptoService as CryptoServiceForFiles;
 use Exception;

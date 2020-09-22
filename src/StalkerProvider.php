@@ -18,7 +18,7 @@ use Muleta\Traits\Providers\ConsoleTools;
 
 use Route;
 use Stalker\Facades\Stalker as StalkerFacade;
-use Stalker\Services\Midia\FileService;
+use Stalker\Services\FileService;
 
 use Stalker\Services\StalkerService;
 

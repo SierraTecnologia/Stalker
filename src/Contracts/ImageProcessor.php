@@ -1,11 +1,11 @@
 <?php
 
-namespace Stalker\Services\Image\Contracts;
+namespace Stalker\Contracts;
 
 /**
  * Interface ImageProcessor.
  *
- * @package Stalker\Services\Image\Contracts
+ * @package Stalker\Contracts
  */
 interface ImageProcessor
 {

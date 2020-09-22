@@ -1,6 +1,6 @@
 <?php
 
-namespace Stalker\Http\Resources\Entitys;
+namespace Stalker\Http\Resources;
 
 use function SiUtils\Helper\html_purify;
 use function SiUtils\Helper\to_object;
@@ -9,7 +9,7 @@ use function SiUtils\Helper\to_string;
 /**
  * Class PhotoResource.
  *
- * @package Stalker\Http\Resources\Entitys
+ * @package Stalker\Http\Resources
  */
 class PhotoResource extends PhotoPlainResource
 {

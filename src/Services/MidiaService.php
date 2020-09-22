@@ -1,6 +1,6 @@
 <?php
 
-namespace Stalker\Services\Midia;
+namespace Stalker\Services;
 
 use Stalker;
 use Exception;

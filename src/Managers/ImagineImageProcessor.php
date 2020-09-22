@@ -1,8 +1,8 @@
 <?php
 
-namespace Stalker\Services\Image;
+namespace Stalker\Managers;
 
-use Stalker\Services\Image\Contracts\ImageProcessor;
+use Stalker\Contracts\ImageProcessor;
 use Illuminate\Contracts\Filesystem\Factory as Storage;
 use Illuminate\Contracts\Validation\Factory as ValidatorFactory;
 use Illuminate\Validation\Rule;
@@ -17,7 +17,7 @@ use InvalidArgumentException;
 /**
  * Class ImagineImageProcessor.
  *
- * @package Stalker\Services\Image
+ * @package Stalker\Managers
  */
 class ImagineImageProcessor implements ImageProcessor
 {

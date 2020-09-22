@@ -5,7 +5,7 @@ namespace Stalker\Models;
 use Stalker\Builders\PhotoBuilder;
 use App\Contants\Tables;
 use Carbon\Carbon;
-use Stalker\Entities\PhotoEntity;
+use MediaManager\Entities\PhotoEntity;
 use Illuminate\Database\Eloquent\Collection;
 use Pedreiro\Models\Base;
 use Siravel\Models\Blog\Post;

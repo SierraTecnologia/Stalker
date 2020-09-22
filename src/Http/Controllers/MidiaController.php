@@ -3,7 +3,7 @@
 namespace Stalker\Http\Controllers;
 
 use Illuminate\Filesystem\Filesystem;
-use Stalker\Services\Midia\MidiaService;
+use Stalker\Services\MidiaService;
 
 class MidiaController extends BaseController
 {

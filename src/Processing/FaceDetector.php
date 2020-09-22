@@ -1,9 +1,9 @@
 <?php
 
-namespace Stalker\Support\Trabalhando\Picture;
+namespace Stalker\Processing;
 
 use Exception;
-use Siravel\Exception\NoFaceException;
+use Stalker\Exceptions\NoFaceException;
 
 class FaceDetector
 {

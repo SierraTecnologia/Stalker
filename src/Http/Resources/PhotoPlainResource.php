@@ -1,8 +1,8 @@
 <?php
 
-namespace Stalker\Http\Resources\Entitys;
+namespace Stalker\Http\Resources;
 
-use Stalker\Entities\PhotoEntity;
+use MediaManager\Entities\PhotoEntity;
 use Illuminate\Http\Resources\Json\Resource;
 use function SiUtils\Helper\html_purify;
 use function SiUtils\Helper\to_int;
@@ -11,7 +11,7 @@ use function SiUtils\Helper\to_string;
 /**
  * Class PhotoPlainResource.
  *
- * @package Stalker\Http\Resources\Entitys
+ * @package Stalker\Http\Resources
  */
 class PhotoPlainResource extends Resource
 {
