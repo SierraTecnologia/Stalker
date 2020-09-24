@@ -169,6 +169,9 @@ class FaceDetector
         return $this->face;
     }
 
+    /**
+     * @param false|resource $canvas
+     */
     protected function getImgStats($canvas)
     {
         $image_width = imagesx($canvas);
@@ -182,6 +185,10 @@ class FaceDetector
         );
     }
 
+    /**
+     * @param false|int $image_width
+     * @param false|int $image_height
+     */
     protected function computeII($canvas, $image_width, $image_height)
     {
         $ii_w = $image_width+1;
@@ -242,7 +249,7 @@ class FaceDetector
         return null;
     }
 
-    protected function detectOnSubImage($x, $y, $scale, $ii, $ii2, $w, $iiw, $inv_area)
+    protected function detectOnSubImage(int $x, int $y, $scale, $ii, $ii2, $w, $iiw, $inv_area)
     {
         $mean  = ($ii[($y+$w)*$iiw + $x + $w] + $ii[$y*$iiw+$x] - $ii[($y+$w)*$iiw+$x] - $ii[$y*$iiw+$x+$w])*$inv_area;
 

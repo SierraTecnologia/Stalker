@@ -27,7 +27,7 @@ class MidiaService
         $this->mimeTypes = include base_path('config'.DIRECTORY_SEPARATOR.'mime.php');
     }
 
-    private function setModel($midiaId)
+    private function setModel(string $midiaId)
     {
         $this->midiaId = CryptoServiceFacade::url_decode($midiaId);
         $this->midia = ModelImage::find($this->midiaId);

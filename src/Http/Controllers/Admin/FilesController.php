@@ -13,7 +13,7 @@ use Redirect;
 use Response;
 use Siravel;
 use Stalker\Repositories\FileRepository;
-use Stalker\Services\FileService;
+use MediaManager\Services\FileService;
 use Storage;
 use Muleta\Services\RiCaResponseService;
 
