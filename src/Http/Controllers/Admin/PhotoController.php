@@ -28,7 +28,7 @@ class PhotoController extends Controller
      *
      * @return View
      */
-    public function index()
+    public function index(Request $request)
     {
         // Show the page
         return view('features.girl.photo.index');
