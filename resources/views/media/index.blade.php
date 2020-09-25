@@ -18,7 +18,7 @@
                         :allow-create-folder="{{ \Illuminate\Support\Facades\Config::get('admin.media-manager.media.allow_create_folder', true) ? 'true' : 'false' }}"
                         :allow-rename="{{ \Illuminate\Support\Facades\Config::get('admin.media-manager.media.allow_rename', true) ? 'true' : 'false' }}"
                         :allow-crop="{{ \Illuminate\Support\Facades\Config::get('admin.media-manager.media.allow_crop', true) ? 'true' : 'false' }}"
-                        :details="{{ json_encode(['thumbnails' => \Illuminate\Support\Facades\Config::get('admin.stalker.media.thumbnails', []), 'watermark' => \Illuminate\Support\Facades\Config::get('admin.stalker.media.watermark', (object)[])]) }}"
+                        :details="{{ json_encode(['thumbnails' => \Illuminate\Support\Facades\Config::get('admin.media-manager.media.thumbnails', []), 'watermark' => \Illuminate\Support\Facades\Config::get('admin.media-manager.media.watermark', (object)[])]) }}"
                         ></media-manager>
                 </div>
             </div><!-- .row -->
