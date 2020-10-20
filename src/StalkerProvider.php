@@ -280,7 +280,7 @@ class StalkerProvider extends ServiceProvider
             'logging.channels.sitec-stalker',
             [
             'driver' => 'single',
-            'path' => storage_path('logs'.DIRECTORY_SEPARACTOR.'sitec-stalker.log'),
+            'path' => storage_path('logs'.DIRECTORY_SEPARATOR.'sitec-stalker.log'),
             'level' => env('APP_LOG_LEVEL', 'debug'),
             ]
         );
