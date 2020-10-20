@@ -126,7 +126,7 @@ class StalkerProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom($this->getPublishesPath('config/sitec/stalker.php'), 'sitec.stalker');
+        $this->mergeConfigFrom($this->getPublishesPath('config'.DIRECTORY_SEPARATOR.'sitec'.DIRECTORY_SEPARATOR.'stalker.php'), 'sitec.stalker');
         $this->mergeConfigFrom($this->getPublishesPath('config/encode.php'), 'encode');
         $this->mergeConfigFrom($this->getPublishesPath('config/image.php'), 'image');
         $this->mergeConfigFrom($this->getPublishesPath('config/imagecache.php'), 'imagecache');
@@ -240,7 +240,7 @@ class StalkerProvider extends ServiceProvider
 
 
         // Register Migrations
-        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        $this->loadMigrationsFrom(__DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'database'.DIRECTORY_SEPARATOR.'migrations');
     }
 
     private function loadViews()
