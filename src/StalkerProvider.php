@@ -118,7 +118,7 @@ class StalkerProvider extends ServiceProvider
         /**
          * Stalker Routes
          */
-        $this->loadRoutesForRiCa(__DIR__.'/../routes');
+        $this->loadRoutesForRiCa(__DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'routes');
     }
 
     /**
@@ -219,7 +219,7 @@ class StalkerProvider extends ServiceProvider
         $this->publishes(
             [
             // Paths
-            $this->getPublishesPath('config/sitec') => config_path('sitec'),
+            $this->getPublishesPath('config'.DIRECTORY_SEPARATOR.'sitec') => config_path('sitec'),
             $this->getPublishesPath('config/encode.php') => config_path('encode.php'),
             $this->getPublishesPath('config/image.php') => config_path('image.php'),
             $this->getPublishesPath('config/imagecache.php') => config_path('imagecache.php'),
@@ -250,7 +250,7 @@ class StalkerProvider extends ServiceProvider
         $this->loadViewsFrom($viewsPath, 'stalker');
         $this->publishes(
             [
-            $viewsPath => base_path('resources/views/vendor/stalker'),
+            $viewsPath => base_path('resources'.DIRECTORY_SEPARATOR.'views'.DIRECTORY_SEPARATOR.'vendor'.DIRECTORY_SEPARATOR.'stalker'),
             ],
             ['views',  'sitec', 'sitec-views', 'stalker']
         );
@@ -261,7 +261,7 @@ class StalkerProvider extends ServiceProvider
         // Publish lanaguage files
         $this->publishes(
             [
-            $this->getResourcesPath('lang') => resource_path('lang/vendor/stalker')
+            $this->getResourcesPath('lang') => resource_path('lang'.DIRECTORY_SEPARATOR.'vendor'.DIRECTORY_SEPARATOR.'stalker')
             ],
             ['lang',  'sitec', 'stalker']
         );
@@ -280,7 +280,7 @@ class StalkerProvider extends ServiceProvider
             'logging.channels.sitec-stalker',
             [
             'driver' => 'single',
-            'path' => storage_path('logs/sitec-stalker.log'),
+            'path' => storage_path('logs'.DIRECTORY_SEPARACTOR.'sitec-stalker.log'),
             'level' => env('APP_LOG_LEVEL', 'debug'),
             ]
         );
